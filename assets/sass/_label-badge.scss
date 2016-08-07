@@ -1,0 +1,62 @@
+/*
+=======================================================================
+=========================== Label/Badge ===============================
+=======================================================================
+*/
+
+.badge {
+  display: inline-block;
+  padding: 0.3em;
+  min-width: 2.1em;
+  font-size: 0.6rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #2ba6cb;
+  color: #fefefe; }
+.badge.secondary {
+  background: #e9e9e9;
+  color: #0a0a0a; }
+.badge.alert {
+  background: #c60f13;
+  color: #fefefe; }
+.badge.success {
+  background: #5da423;
+  color: #fefefe; }
+.badge.warning {
+  background: #ffae00;
+  color: #fefefe; }
+.badge.body-font {
+  background: #222222;
+  color: #fefefe; }
+.badge.header {
+  background: #222222;
+  color: #fefefe; }
+
+.label {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  border-radius: 3px;
+  background: #2ba6cb;
+  color: #fefefe; }
+.label.secondary {
+  background: #e9e9e9;
+  color: #0a0a0a; }
+.label.alert {
+  background: #c60f13;
+  color: #fefefe; }
+.label.success {
+  background: #5da423;
+  color: #fefefe; }
+.label.warning {
+  background: #ffae00;
+  color: #fefefe; }
+.label.body-font {
+  background: #222222;
+  color: #fefefe; }
+.label.header {
+  background: #222222;
+  color: #fefefe; }
