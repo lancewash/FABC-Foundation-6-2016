@@ -517,7 +517,7 @@ td {
 }
 
 .row {
-  max-width: 62.5rem;
+  max-width: 100.5rem;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-flex;
@@ -530,8 +530,8 @@ td {
 
 .row .row {
   max-width: none;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .row.expanded {
@@ -543,12 +543,21 @@ td {
   padding-right: 0;
 }
 
-.column, .columns {
+.columns {
   -webkit-flex: 1 1 0px;
   -ms-flex: 1 1 0px;
   flex: 1 1 0px;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 8.375rem;
+  padding-right: 0;
+  min-width: initial;
+}
+
+.column {
+  -webkit-flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-width: initial;
 }
 
@@ -2453,7 +2462,6 @@ p + .stat {
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 3px;
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
