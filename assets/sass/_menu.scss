@@ -4,7 +4,8 @@
 =======================================================================
 */
 
-.menu {
+.menu,
+.quick-links{
   margin: 0;
   list-style-type: none;
   width: 100%;
@@ -19,7 +20,14 @@
   align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  padding: 1.5rem 3rem;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+    }
+}
 .menu > li {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;

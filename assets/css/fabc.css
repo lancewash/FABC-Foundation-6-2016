@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*  Colors */
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.3
@@ -1926,19 +1927,19 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.65rem;
   }
   h3 {
-    font-size: 1.9375rem;
+    font-size: 1.5rem;
   }
   h4 {
-    font-size: 1.5625rem;
+    font-size: 1.3rem;
   }
   h5 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   h6 {
     font-size: 1rem;
@@ -2209,7 +2210,8 @@ p + .stat {
 =============================== Menu ==================================
 =======================================================================
 */
-.menu {
+.menu,
+.quick-links {
   margin: 0;
   list-style-type: none;
   width: 100%;
@@ -2225,6 +2227,13 @@ p + .stat {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  padding: 1.5rem 3rem;
+}
+
+.menu a,
+.quick-links a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .menu > li {
@@ -4691,10 +4700,126 @@ html.is-reveal-open body {
 ============================ Structure ================================
 =======================================================================
 */
+.header-wrapper {
+  background: #390C06;
+}
+
+.page-wrapper {
+  padding: 30px;
+}
+
+.quick-links {
+  background: #5B1700;
+}
+
+.quick-links a {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+}
+
 .columns article.content-item {
-  padding: 2rem 0 2rem 4rem;
+  padding: 3.5rem 0 5rem 3.5rem;
+}
+
+.columns article h2 {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
 }
 
 .column article {
-  padding: 2rem;
+  background: #efefef;
+  padding: 3.5rem;
+}
+
+.column h2 {
+  margin-bottom: 2rem;
+}
+
+.intro {
+  padding-bottom: 6rem;
+}
+
+.intro h1 span {
+  font-size: 1.25rem;
+}
+
+.intro-text h1 {
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.intro-img {
+  margin-top: -9rem;
+}
+
+.intro-img img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.intro-img p {
+  text-align: center;
+}
+
+/*=================================
+
+         Media Queries
+
+==================================*/
+@media screen and (max-width: 64em) {
+  .column,
+  .columns {
+    flex: 100% !important;
+  }
+  .column article.content-item,
+  .columns article.content-item {
+    padding: 0;
+  }
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .column,
+  .columns {
+    flex: 100% !important;
+  }
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/*
+=======================================================================
+============================= Banner ==================================
+=======================================================================
+*/
+.banner-wrap {
+  height: calc(84vh - 180px);
+  margin-bottom: 2.5rem;
+  background: url("../img/fabc-banner-1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.banner-wrap .banner {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
 }

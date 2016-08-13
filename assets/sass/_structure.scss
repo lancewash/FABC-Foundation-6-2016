@@ -4,19 +4,145 @@
 =======================================================================
 */
 
+.header-wrapper {
+  background: $primary-color;
+}
+
+.header-intro {
+
+  .banner-wrap {
+    //height: calc(80vh - 50px);
+  }
+}
+
+.page-wrapper {
+  padding: 30px;
+}
+
+//.header-intro {
+//  height: 100vh;
+//}
+
+.quick-links {
+  background: $secondary-color;
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+.logo {
+  position: relative;
+  
+  img {
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+  }
+}
+
 .columns {
 
   article {
 
     &.content-item {
-      padding: 2rem 0 2rem 4rem;
+      padding: 3.5rem 0 5rem 3.5rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid $light-gray;
+      margin-bottom: 2rem;
+      padding-bottom: .5rem;
     }
   }
 }
 
-  .column {
+.column {
 
-    article {
-    padding: 2rem;
+  article {
+    background: #efefef;
+    padding: 3.5rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
   }
 }
+
+.intro {
+  padding-bottom: 6rem;
+
+  h1 {
+
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.intro-text{
+
+  h1 {
+    line-height: 1;
+    margin-bottom: 4rem;
+  }
+}
+
+.intro-img {
+  margin-top: -9rem;
+
+  img {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  //img {
+  //  border: 3px solid $white;
+  //}
+}
+
+
+
+
+
+/*=================================
+
+         Media Queries
+
+==================================*/
+
+@media screen and (max-width: 64em) {
+  .column,
+  .columns {
+    flex: 100% !important;
+
+    article.content-item {
+      padding: 0;
+    }
+  }
+
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .column,
+  .columns {
+    flex: 100% !important;
+  }
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+

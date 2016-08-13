@@ -1,0 +1,21 @@
+/*
+=======================================================================
+============================= Banner ==================================
+=======================================================================
+*/
+
+.banner-wrap {
+  height: calc(84vh - 180px);
+  margin-bottom: 2.5rem;
+  background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  width: 100%;
+  //height: calc(100vh - 200px);
+
+  .banner {
+
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+
+  }
+}
