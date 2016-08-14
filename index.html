@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <main>
+    <div>
         <div class="row intro">
             <div class="[ large-3 large-offset-1 columns ] intro-img">
                 <img src="assets/img/pastor-mrs-dent.png" alt="">
@@ -286,42 +286,59 @@
                 <p>4</p>
             </div>
         </div>
-        <section>
-            <!--Map-->
-        </section>
-    </main>
-    <div>
-        <!--Parallax Banner 3-->
-    </div>
-    <footer>
-        <div>
-            <div>
+        <!-- Map Begin -->
+        <div class="map-wrapper">
+            <div class="map">
 
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+                <!-- Map End -->
             </div>
         </div>
-    </footer>
-</div>
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-<script src="assets/js/jquery-1.11.3.js"></script>
-<script>
-    $(function () {
-        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-            $('#ios-notice').removeClass('hidden');
-            $('.parallax-container').height($(window).height() * 0.5 | 0);
-        } else {
-            $(window).resize(function () {
-                var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
-                $('.parallax-container').height(parallaxHeight);
-            }).trigger('resize');
-        }
-    });
-</script>
-<script src="assets/js/parallax.js"></script>
+        <div>
+            <!--Parallax Banner 3-->
+        </div>
+        <footer>
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="assets/js/jquery-1.11.3.js"></script>
+    <script>
+        $(function () {
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                $('#ios-notice').removeClass('hidden');
+                $('.parallax-container').height($(window).height() * 0.5 | 0);
+            } else {
+                $(window).resize(function () {
+                    var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+                    $('.parallax-container').height(parallaxHeight);
+                }).trigger('resize');
+            }
+        });
+    </script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/lunar.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            new PointsMap(document.querySelector('#interactive-1'));
+            new PointsMap(document.querySelector('#interactive-2'), {
+                // Maximum opacity that the background element of a Point can have when the point is active (mouse gets closer to it).
+                maxOpacityOnActive: 1,
+                // When the mouse is [activeOn]px away from one point, its image gets opacity = point.options.maxOpacity.
+                activeOn: 90
+            });
+        })();
+    </script>
 </body>
 </html>
