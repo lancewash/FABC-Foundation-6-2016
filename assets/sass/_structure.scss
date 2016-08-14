@@ -114,7 +114,7 @@
   }
 }
 
-.v-h100 {
+.vh-100 {
   height: 100%;
 }
 
@@ -228,27 +228,19 @@
     //}
   }
 
-  .columns {
-
-    article {
-
-      &.content-item {
-        padding: 3.5rem 0 5rem;
-      }
-    }
-  }
+  //.columns {
+  //
+  //  article {
+  //
+  //    &.content-item {
+  //      padding: 3.5rem 0 5rem;
+  //    }
+  //  }
+  //}
 }
 
 @media screen and (max-width: 64em) {
-  .column,
-  .columns {
-    flex: 100% !important;
 
-    article.content-item {
-      min-height: 370px;
-      padding: 0;
-    }
-  }
 
   .column {
 
@@ -270,6 +262,11 @@
   .column,
   .columns {
     flex: 100% !important;
+
+    article.content-item {
+      min-height: 370px;
+      padding: 0;
+    }
   }
 
   .intro {
