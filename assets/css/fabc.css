@@ -2524,40 +2524,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1875rem;
+  font-size: 1.1rem;
 }
 
 h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1.0625rem;
-}
-
-h6 {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 40em) {
-  h1 {
-    font-size: 2.25rem;
-  }
-  h2 {
-    font-size: 1.65rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 1.3rem;
-  }
-  h5 {
-    font-size: 1.1rem;
-  }
-  h6 {
-    font-size: 1rem;
-  }
+h5 {
+  font-size: .9rem;
+}
+
+h6 {
+  font-size: .85rem;
 }
 
 a {
@@ -5351,10 +5330,14 @@ html.is-reveal-open body {
   left: 9rem;
 }
 
-.columns article.content-item {
-  height: 100%;
-  padding: 3.5rem 0 5rem 3.5rem;
-  position: relative;
+.columns.end,
+.column.end {
+  padding-right: 0;
+}
+
+.columns.begin,
+.column.begin {
+  padding-left: 0;
 }
 
 .columns article h2 {
@@ -5374,16 +5357,22 @@ html.is-reveal-open body {
 
 .column.end, .column.begin {
   border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
   padding-right: 0;
   position: relative;
 }
 
-.column.end {
-  padding-right: 0;
+.content-item {
+  padding: 3.5rem 0 5rem 3.5rem;
+  position: relative;
 }
 
-.column.begin {
-  padding-left: 0;
+nav .content-item {
+  padding-top: 0;
+}
+
+.v-h100 {
+  height: 100%;
 }
 
 .overlay-70 {
@@ -5400,6 +5389,10 @@ html.is-reveal-open body {
   height: 100%;
   width: 100%;
   right: 0;
+}
+
+.text-inverted {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .intro {
@@ -5430,9 +5423,33 @@ html.is-reveal-open body {
   text-align: center;
 }
 
-.worship-times {
+.worship-times-callout {
   max-height: 500px !important;
   min-height: 450px;
+}
+
+.current-events-callout {
+  max-height: 650px !important;
+  min-height: 600px;
+}
+
+.ministries-callout {
+  max-height: 800px !important;
+  min-height: 700px;
+}
+
+.ministries-4 .column, .ministries-4 .columns {
+  background: #ccc;
+  height: 100px;
+  border-left: 1px solid #fff;
+}
+
+.ministries-4 .column *, .ministries-4 .columns * {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
 }
 
 /*=================================
