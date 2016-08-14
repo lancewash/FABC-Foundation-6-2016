@@ -28,6 +28,7 @@
 
   a {
     color: $white;
+    padding: 2rem;
     text-transform: uppercase;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -41,7 +42,7 @@
   img {
     position: absolute;
     top: 2rem;
-    left: 6rem;
+    left: 9rem;
   }
 }
 
@@ -50,7 +51,10 @@
   article {
 
     &.content-item {
+      height: 100%;
+
       padding: 3.5rem 0 5rem 3.5rem;
+      position: relative;
     }
 
     h2 {
@@ -70,6 +74,14 @@
 
   h2 {
     margin-bottom: 2rem;
+  }
+
+  &.end {
+    padding-right: 0;
+  }
+
+  &.begin {
+    padding-left: 0;
   }
 }
 
@@ -125,24 +137,52 @@
     flex: 100% !important;
 
     article.content-item {
+      min-height: 370px;
       padding: 0;
     }
   }
+  
+  .column {
 
-  main {
-    padding-left: 10%;
-    padding-right: 10%;
+    article {
+      padding: 1.5rem;
+    }
+    
+    &.end {
+      padding-left: 0;
+    }
   }
 }
 
 @media screen and (max-width: 40em) {
+
+  .page-wrapper {
+    padding: 10px;
+  }
   .column,
   .columns {
     flex: 100% !important;
   }
-  main {
-    padding-left: 5%;
-    padding-right: 5%;
+
+  
+  .intro {
+    padding-bottom: 2rem;
+  }
+
+  .intro-text h1 {
+     margin-bottom: 2rem;
+  }
+  //main {
+  //  padding-left: 5%;
+  //  padding-right: 5%;
+  //}
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
   }
 }
 

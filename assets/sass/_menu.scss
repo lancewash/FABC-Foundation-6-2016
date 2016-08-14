@@ -22,7 +22,7 @@
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding: 1.5rem 3rem;
+  //padding: 1.5rem 3rem;
 
     a {
       color: $white;
@@ -37,7 +37,7 @@
   outline: 0; }
 .menu > li > a {
   display: block;
-  padding: 0.7rem 1rem;
+  padding: 2.25rem;
   line-height: 1; }
 .menu input,
 .menu a,
@@ -134,7 +134,8 @@
 .menu.align-right {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding-right: 2rem;}
 .menu.expanded > li {
   -webkit-flex: 1 1 0px;
   -ms-flex: 1 1 0px;

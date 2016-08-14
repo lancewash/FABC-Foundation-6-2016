@@ -259,6 +259,13 @@
   flex: 0 0 100%; }
 .button-group.stacked .button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-medium .button:last-child {
   margin-bottom: 0; }
+
+.v-stretch {
+  bottom: 2rem;
+  position: absolute;
+}
+
+
 @media screen and (min-width: 40em) {
   .button-group.stacked-for-small .button {
     -webkit-flex: 1 1 0px;
