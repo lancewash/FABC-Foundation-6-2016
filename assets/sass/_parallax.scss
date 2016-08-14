@@ -4,11 +4,18 @@
 =======================================================================
 */
 
+
+.parallax-window {
+  margin-bottom: 1px;
+  min-height: 400px;
+  background: transparent;
+}
+
 [class^="parallax-"] {
-  height: 400px;
-  margin: 1px 0;
-  background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
-  background-size: cover;
-  width: 100%;
+  //height: 400px;
+  //margin: 1px 0;
+  //background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
+  //background-size: cover;
+  //width: 100%;
   //height: calc(100vh - 200px);
 }

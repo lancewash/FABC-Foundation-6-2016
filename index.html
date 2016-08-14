@@ -35,7 +35,9 @@
         <div class="row">
             <div class="[ large-16 columns ] banner-wrap">
                 <div class="banner">
-                    <!--<img src="assets/img/fabc-banner-1.jpg" alt="">-->
+                    <div class="parallax-container" data-parallax="scroll" data-speed="0.4" data-image-src="assets/img/fabc-banner-4.jpg" data-natural-width="1600" data-natural-height="600" style="height: 340px;">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,30 +50,14 @@
                 <p>Pastor and First Lady<br>
                     Mr. and Mrs.</p>
             </div>
-            <div class="[ large-10 columns ] intro-text">
+            <div class="[ large-8 columns ] intro-text">
                 <!--Welcome-->
                 <h1>WELCOME<br>
                     <span>to First African Baptist Church Of Darby Township Pennsylvania</span></h1>
 
 
                 <p>
-                    I am very pleased that you decided to visit the website of First African Baptist Church of
-                    Sharon
-                    Hill,
-                    PA. First African is a family-oriented church for all of the Lord’s children regardless of
-                    race,
-                    color,
-                    creed, or circumstance. If you have never experienced the JOY! of First African, I sincerely
-                    ask
-                    you
-                    to
-                    join us for Sunday morning worship service. If you have visited previously and are looking
-                    for a
-                    church
-                    home, please accept an invitation to become part of our Christian fellowship on Sunday
-                    morning.May
-                    God
-                    bless and keep you.
+                    I am very pleased that you decided to visit the website of First African Baptist Church of Sharon Hill, PA. First African is a family-oriented church for all of the Lord’s children regardless of race, color, creed, or circumstance. If you have never experienced the JOY! of First African, I sincerely  ask you to join us for Sunday morning worship service. If you have visited previously and are looking  for a church home, please accept an invitation to become part of our Christian fellowship on Sunday  morning.May God bless and keep you.
                 </p>
 
             </div>
@@ -105,11 +91,11 @@
                     <a href="" class="button primary v-stretch">Read More</a>
                 </article>
             </div>
-            <div class="[ xxlarge-4 xxlarge-offset-2 large-5 large-offset-1 medium-16 column end ]">
+            <div class="[ xxlarge-4 xxlarge-offset-2 large-5 large-offset-1 medium-16 column end ] worship-times parallax-container" data-parallax="scroll" data-speed="0.4" data-image-src="assets/img/fabc-banner-4.jpg" data-natural-width="1600" data-natural-height="600">
+                <div class="overlay-70"></div>
                 <article>
                     <!--Worship Times-->
                     <h2>Worship Times</h2>
-
                     <p>Sunday Worship Service<br>
                         8:45 AM<br>
                         Sunday School & Discipleship Class<br>
@@ -117,7 +103,7 @@
                         Morning Worship</p>
 
                     <p>First Sunday<br>
-                        Holy Baptism, The Lord’s Supper and The Right Hand of Fellowship for New</p>
+                        Holy Baptism, The Lord’s Supper and The Right Hand of Fellowship for New Members</p>
                     <a href="">Read More</a>
 
                     <!--<p>Wednesday<br>
@@ -132,10 +118,9 @@
                         10:00 am - Adult Bible Study</p>-->
                 </article>
             </div>
-
         </section>
-        <div class="parallax-1">
-            <!--Parallax Banner 1-->
+        <div class="parallax-container" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/fabc-banner-1.jpg" data-natural-width="1600" data-natural-height="591" style="height: 360px;">
+
         </div>
         <section>
             <article>
@@ -149,8 +134,8 @@
                 </div>
             </article>
         </section>
-        <div class="parallax-2">
-            <!--Parallax Banner 2-->
+        <div class="parallax-container" data-parallax="scroll" data-speed="0.3" data-image-src="assets/img/fabc-banner-3.jpg" data-natural-width="1600" data-natural-height="591" style="height: 360px;">
+
         </div>
         <section>
             <div>
@@ -202,7 +187,22 @@
             </div>
         </div>
     </footer>
-
 </div>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="assets/js/jquery-1.11.3.js"></script>
+<script>
+    $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            $('#ios-notice').removeClass('hidden');
+            $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+            $(window).resize(function(){
+                var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+                $('.parallax-container').height(parallaxHeight);
+            }).trigger('resize');
+        }
+    });
+</script>
+<script src="assets/js/parallax.js"></script>
 </body>
 </html>

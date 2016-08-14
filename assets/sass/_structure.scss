@@ -52,7 +52,6 @@
 
     &.content-item {
       height: 100%;
-
       padding: 3.5rem 0 5rem 3.5rem;
       position: relative;
     }
@@ -65,28 +64,51 @@
   }
 }
 
+//.end article {
+//  background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
+//  position: relative;
+//  z-index: -1;
+//}
+
 .column {
 
   article {
-    background: #efefef;
+    //background: #efefef;
     padding: 3.5rem;
+    position: relative;
   }
 
   h2 {
     margin-bottom: 2rem;
   }
+  
+  &.end, &.begin {
+     border-bottom: 1px solid $white;
+     padding-right: 0;
+    position: relative;
+   }
 
   &.end {
     padding-right: 0;
-  }
+  }  
 
   &.begin {
     padding-left: 0;
   }
 }
 
+.overlay-70 {
+  background: url("../img/transparent-70.png") repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+}
+
 .intro {
+  background: $white;
   padding-bottom: 6rem;
+  padding-top: 3rem;
 
   h1 {
 
@@ -121,7 +143,10 @@
   //}
 }
 
-
+.worship-times {
+  max-height: 500px !important;
+  min-height: 450px;
+}
 
 
 
@@ -130,6 +155,33 @@
          Media Queries
 
 ==================================*/
+
+
+@media screen and (max-width: 75em) {
+
+  .column {
+
+    article {
+      padding: 3.5rem 1rem;
+    }
+
+    //&.end {
+    //  padding-left: 0;
+    //}
+  }
+
+  .columns {
+
+    article {
+
+      &.content-item {
+        padding: 3.5rem 0 5rem;
+      }
+    }
+  }
+}
+
+
 
 @media screen and (max-width: 64em) {
   .column,

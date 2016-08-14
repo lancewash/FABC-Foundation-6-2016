@@ -5364,12 +5364,18 @@ html.is-reveal-open body {
 }
 
 .column article {
-  background: #efefef;
   padding: 3.5rem;
+  position: relative;
 }
 
 .column h2 {
   margin-bottom: 2rem;
+}
+
+.column.end, .column.begin {
+  border-bottom: 1px solid #fff;
+  padding-right: 0;
+  position: relative;
 }
 
 .column.end {
@@ -5380,8 +5386,18 @@ html.is-reveal-open body {
   padding-left: 0;
 }
 
+.overlay-70 {
+  background: url("../img/transparent-70.png") repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+}
+
 .intro {
+  background: #fff;
   padding-bottom: 6rem;
+  padding-top: 3rem;
 }
 
 .intro h1 span {
@@ -5406,11 +5422,25 @@ html.is-reveal-open body {
   text-align: center;
 }
 
+.worship-times {
+  max-height: 500px !important;
+  min-height: 450px;
+}
+
 /*=================================
 
          Media Queries
 
 ==================================*/
+@media screen and (max-width: 75em) {
+  .column article {
+    padding: 3.5rem 1rem;
+  }
+  .columns article.content-item {
+    padding: 3.5rem 0 5rem;
+  }
+}
+
 @media screen and (max-width: 64em) {
   .column,
   .columns {
@@ -5458,9 +5488,7 @@ html.is-reveal-open body {
 =======================================================================
 */
 .banner-wrap {
-  height: calc(84vh - 162px);
-  margin-bottom: 3rem;
-  background: url("../img/fabc-banner-1.jpg") 50% 50% no-repeat;
+  height: calc(84vh - 160px);
   background-size: cover;
   width: 100%;
 }
@@ -5470,15 +5498,25 @@ html.is-reveal-open body {
   margin-right: -0.9375rem;
 }
 
+@media screen and (max-height: 715px) {
+  .banner-wrap {
+    height: calc(84vh - 180px);
+    background-size: cover;
+    width: 100%;
+  }
+  .banner-wrap .banner {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
 /*
 =======================================================================
 ============================= Parallax ================================
 =======================================================================
 */
-[class^="parallax-"] {
-  height: 400px;
-  margin: 1px 0;
-  background: url("../img/fabc-banner-1.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  width: 100%;
+.parallax-window {
+  margin-bottom: 1px;
+  min-height: 400px;
+  background: transparent;
 }
