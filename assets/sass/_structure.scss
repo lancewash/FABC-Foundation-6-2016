@@ -43,7 +43,8 @@
   img {
     position: absolute;
     top: 2rem;
-    left: 9rem;
+    left: 11rem;
+    z-index: 10;
   }
 }
 
@@ -67,6 +68,13 @@
       border-bottom: 1px solid $light-gray;
       margin-bottom: 2rem;
       padding-bottom: .5rem;
+    }
+
+    h3 {
+      border-bottom: 1px solid $light-gray;
+      margin-top: .5rem;
+      margin-bottom: 2rem;
+      padding-bottom: .75rem;
     }
   }
 }
@@ -140,13 +148,13 @@
 }
 
 .text-inverted {
-  color: rgba(255, 255, 255, .85);
+  color: $white;
 }
 
 .intro {
   background: $white;
   padding-bottom: 6rem;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
 
   h1 {
 
@@ -159,7 +167,8 @@
 .intro-text {
 
   h1 {
-    line-height: 1;
+    font-size: 4.5rem;
+    line-height: .6;
     margin-bottom: 4rem;
   }
 }
@@ -179,6 +188,18 @@
   //img {
   //  border: 3px solid $white;
   //}
+}
+
+.news-link {
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
 }
 
 .worship-times-callout {
@@ -220,6 +241,65 @@
 
 ==================================*/
 
+/*@media screen and (min-width: 105em) {
+
+  .page-wrapper {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    max-width: 110rem;
+    padding: 0;
+  }
+}*/
+
+@media screen and (min-width: 120em) {
+
+  .page-wrapper {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    max-width: 120rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 105em) {
+
+  //.page-wrapper {
+  //  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  //  border-left: 1px solid rgba(0, 0, 0, .1);
+  //  border-right: 1px solid rgba(0,0,0,.1);
+  //  max-width: 110rem;
+  //  padding: 0;
+  //}
+  //.logo {
+  //  position: relative;
+  //
+  //  img {
+  //    position: absolute;
+  //    top: 2rem;
+  //    left: 7rem;
+  //    z-index: 10;
+  //  }
+  //}
+
+}
+
+@media screen and (max-width: 90em) {
+
+  .logo {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 2rem;
+      left: 5rem;
+      z-index: 10;
+    }
+  }
+
+}
+
 @media screen and (max-width: 75em) {
 
   .column {
@@ -227,21 +307,18 @@
     article {
       padding: 3.5rem 1rem;
     }
-
-    //&.end {
-    //  padding-left: 0;
-    //}
   }
 
-  //.columns {
-  //
-  //  article {
-  //
-  //    &.content-item {
-  //      padding: 3.5rem 0 5rem;
-  //    }
-  //  }
-  //}
+  .logo {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 2rem;
+      left: 3rem;
+      z-index: 10;
+    }
+  }
 }
 
 @media screen and (max-width: 64em) {
@@ -255,6 +332,17 @@
 
     &.end {
       padding-left: 0;
+    }
+  }
+
+  .logo {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      z-index: 10;
     }
   }
 }
@@ -279,7 +367,8 @@
   }
 
   .intro-text h1 {
-    margin-bottom: 2rem;
+    font-size: 3.75rem;
+    margin-bottom: 4rem;
   }
   //main {
   //  padding-left: 5%;
