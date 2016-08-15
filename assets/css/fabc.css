@@ -2975,7 +2975,6 @@ p + .stat {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-right: 2rem;
 }
 
 .menu.expanded > li {
@@ -5515,6 +5514,8 @@ nav .content-item {
   height: calc(84vh - 160px);
   background-size: cover;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .banner-wrap .banner {
@@ -6158,4 +6159,32 @@ p.margin-paragraph {
   .message {
     display: block;
   }
+}
+
+/*
+=======================================================================
+=============================== GSAP ==================================
+=======================================================================
+*/
+[id^="gsap-"] {
+  font-size: 5rem;
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+}
+
+#gsap-intro-text-1 {
+  top: 25%;
+  left: 10%;
+  right: 10%;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#gsap-intro-text-2 {
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  margin: 0 auto;
+  width: 80%;
 }
