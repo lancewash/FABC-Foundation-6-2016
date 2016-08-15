@@ -118,20 +118,25 @@
   height: 100%;
 }
 
-.overlay-70 {
-  background: url("../img/transparent-70.png") repeat;
+.overlay-851,
+.overlay-70,
+.overlay-71,
+.overlay-72,
+.overlay-73,
+.overlay-74,
+.overlay-50 {
   position: absolute;
   height: 100%;
   width: 100%;
   right: 0;
 }
 
+.overlay-851 {
+  background: url("../img/transparent-85-1.png") repeat;
+}
+
 .overlay-50 {
   background: url("../img/transparent-50.png") repeat;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  right: 0;
 }
 
 .text-inverted {

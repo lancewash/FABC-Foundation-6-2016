@@ -14,6 +14,10 @@
   background: transparent;
 }
 
+.parallax-container {
+  position: relative;
+}
+
 [class^="parallax-"] {
   //height: 400px;
   //margin: 1px 0;
