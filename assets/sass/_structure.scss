@@ -4,6 +4,11 @@
 =======================================================================
 */
 
+body {
+  font-family: $baseFontFamily;
+  color: $medium-gray;
+}
+
 .header-wrapper {
   background: $primary-color;
 }
@@ -66,7 +71,7 @@
 
     h2 {
       border-bottom: 1px solid $light-gray;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       padding-bottom: .5rem;
     }
 
@@ -171,6 +176,10 @@
     line-height: .6;
     margin-bottom: 4rem;
   }
+
+  p {
+    font-size: 1.35rem;
+  }
 }
 
 .intro-img {
@@ -197,18 +206,19 @@
   }
 
   h4 {
+    color: $link-color;
     margin-bottom: 0;
   }
 
 }
 
 .worship-times-callout {
-  max-height: 500px !important;
-  min-height: 450px;
+  max-height: 600px !important;
+  min-height: 500px;
 }
 
 .current-events-callout {
-  max-height: 650px !important;
+  max-height: 700px !important;
   min-height: 600px;
 }
 

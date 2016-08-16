@@ -13,7 +13,8 @@
 }
 
 #gsap-intro-text-1 {
-  top: 25%;
+  font-family: $headingsFontFamily;
+  top: 30%;
   left: 10%;
   right: 10%;
   margin: 0 auto;
@@ -21,6 +22,7 @@
 }
 
 #gsap-intro-text-2 {
+  font-family: $headingsFontFamily;
   top: 40%;
   left: 10%;
   right: 10%;

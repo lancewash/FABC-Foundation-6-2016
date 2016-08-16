@@ -2768,7 +2768,7 @@ td {
 =======================================================================
 */
 p {
-  font-size: inherit;
+  font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 1rem;
   text-rendering: optimizeLegibility;
@@ -2800,7 +2800,7 @@ h6 {
   font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: normal;
   font-style: normal;
-  color: inherit;
+  color: #354545;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2842,14 +2842,14 @@ h6 {
 }
 
 a {
-  color: #2ba6cb;
+  color: #C44426;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
 }
 
 a:hover, a:focus {
-  color: #258faf;
+  color: #777;
 }
 
 a img {
@@ -3108,6 +3108,14 @@ p + .stat {
 @font-face {
   font-family: 'playfair_displaybold';
   src: url("fonts/playfairdisplay-bold-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_ththin';
+  src: url("fonts/proxima_nova_thin-webfont.eot");
+  src: url("fonts/proxima_nova_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_thin-webfont.woff2") format("woff2"), url("fonts/proxima_nova_thin-webfont.woff") format("woff"), url("fonts/proxima_nova_thin-webfont.ttf") format("truetype"), url("fonts/proxima_nova_thin-webfont.svg#proxima_nova_ththin") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5612,6 +5620,11 @@ html.is-reveal-open body {
 ============================ Structure ================================
 =======================================================================
 */
+body {
+  font-family: "proxima_nova_ththin", Helvetica, Arial, sans-serif;
+  color: #777;
+}
+
 .header-wrapper {
   background: #390C06;
 }
@@ -5657,7 +5670,7 @@ html.is-reveal-open body {
 
 .columns article h2 {
   border-bottom: 1px solid #eee;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: .5rem;
 }
 
@@ -5738,6 +5751,10 @@ nav .content-item {
   margin-bottom: 4rem;
 }
 
+.intro-text p {
+  font-size: 1.35rem;
+}
+
 .intro-img {
   margin-top: -9rem;
 }
@@ -5756,16 +5773,17 @@ nav .content-item {
 }
 
 .news-link h4 {
+  color: #C44426;
   margin-bottom: 0;
 }
 
 .worship-times-callout {
-  max-height: 500px !important;
-  min-height: 450px;
+  max-height: 600px !important;
+  min-height: 500px;
 }
 
 .current-events-callout {
-  max-height: 650px !important;
+  max-height: 700px !important;
   min-height: 600px;
 }
 
@@ -5948,7 +5966,8 @@ nav .content-item {
 }
 
 #gsap-intro-text-1 {
-  top: 25%;
+  font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 30%;
   left: 10%;
   right: 10%;
   margin: 0 auto;
@@ -5956,6 +5975,7 @@ nav .content-item {
 }
 
 #gsap-intro-text-2 {
+  font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   top: 40%;
   left: 10%;
   right: 10%;
