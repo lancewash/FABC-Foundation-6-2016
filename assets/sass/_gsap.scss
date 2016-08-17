@@ -6,26 +6,24 @@
 */
 
 [id^="gsap-"] {
+  color: rgba(0,0,0,.2);
   font-size: 5rem;
+  font-family: $heading-font-regular;
   position: absolute;
   z-index: -1;
   text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 #gsap-intro-text-1 {
-  font-family: $headingsFontFamily;
   top: 30%;
   left: 10%;
   right: 10%;
-  margin: 0 auto;
-  width: 80%;
 }
 
 #gsap-intro-text-2 {
-  font-family: $headingsFontFamily;
   top: 40%;
   left: 10%;
   right: 10%;
-  margin: 0 auto;
-  width: 80%;
 }

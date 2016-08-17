@@ -1,9 +1,8 @@
 
-$baseFontFamily: 'proxima_nova_ththin', Helvetica, Arial, sans-serif;
-$headingsFontFamily: 'playfair_displaybold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$controlsFontFamily: $baseFontFamily;
-$codeFontFamily: Menlo, Monaco, Consolas, "Courier New", monospace;
-$mainNavFontFamily: 'montserratbold';
+$base-font: 'proxima_nova_ththin', Helvetica, Arial, sans-serif;
+$heading-font-bold: 'playfair_displaybold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-regular: 'playfair_displayregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 /*  Colors */
 
@@ -13,4 +12,5 @@ $white: #fff;
 $light-gray: #eee;
 $medium-gray: #777;
 $dark-gray: #354545;
+$dark-blue: #003247;
 $link-color: #C44426;

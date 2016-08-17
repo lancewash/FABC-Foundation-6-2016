@@ -2800,7 +2800,7 @@ h6 {
   font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: normal;
   font-style: normal;
-  color: #354545;
+  color: #003247;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -3108,6 +3108,13 @@ p + .stat {
 @font-face {
   font-family: 'playfair_displaybold';
   src: url("fonts/playfairdisplay-bold-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url("fonts/playfairdisplay-regular-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -5670,7 +5677,7 @@ body {
 
 .columns article h2 {
   border-bottom: 1px solid #eee;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-bottom: .5rem;
 }
 
@@ -5710,25 +5717,37 @@ nav .content-item {
   height: 100%;
 }
 
-.overlay-851,
-.overlay-70,
-.overlay-71,
-.overlay-72,
-.overlay-73,
-.overlay-74,
-.overlay-50 {
+.overlay-a,
+.overlay-b,
+.overlay-c,
+.overlay-d,
+.overlay-e,
+.overlay-f,
+.overlay-g {
   position: absolute;
   height: 100%;
   width: 100%;
   right: 0;
 }
 
-.overlay-851 {
-  background: url("../img/transparent-85-1.png") repeat;
+.overlay-a {
+  background: url("../img/overlay-a.png") repeat;
 }
 
-.overlay-50 {
-  background: url("../img/transparent-50.png") repeat;
+.overlay-b {
+  background: url("../img/overlay-b.png") repeat;
+}
+
+.overlay-c {
+  background: url("../img/overlay-c.png") repeat;
+}
+
+.overlay-d {
+  background: url("../img/overlay-d.png") repeat;
+}
+
+.overlay-e {
+  background: url("../img/overlay-e.png") repeat;
 }
 
 .text-inverted {
@@ -5831,6 +5850,16 @@ nav .content-item {
   }
 }
 
+/*@media screen and (min-width: 90em) {
+
+  .page-wrapper {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    max-width: 100rem;
+    padding: 0;
+  }
+}*/
 @media screen and (max-width: 90em) {
   .logo {
     position: relative;
@@ -5953,32 +5982,51 @@ nav .content-item {
   position: relative;
 }
 
+.parallax-container h1,
+.parallax-container h2,
+.parallax-container h3,
+.parallax-container h4,
+.parallax-container p {
+  color: #fff;
+}
+
+.parallax-container p {
+  font-size: 1rem;
+}
+
+/*
+=======================================================================
+============================ buzzsprout ===============================
+=======================================================================
+*/
+.episode {
+  margin-bottom: -35px;
+}
+
 /*
 =======================================================================
 =============================== GSAP ==================================
 =======================================================================
 */
 [id^="gsap-"] {
+  color: rgba(0, 0, 0, 0.2);
   font-size: 5rem;
+  font-family: "playfair_displayregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   z-index: -1;
   text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 #gsap-intro-text-1 {
-  font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   top: 30%;
   left: 10%;
   right: 10%;
-  margin: 0 auto;
-  width: 80%;
 }
 
 #gsap-intro-text-2 {
-  font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   top: 40%;
   left: 10%;
   right: 10%;
-  margin: 0 auto;
-  width: 80%;
 }

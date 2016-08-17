@@ -5,7 +5,7 @@
 */
 
 body {
-  font-family: $baseFontFamily;
+  font-family: $base-font;
   color: $medium-gray;
 }
 
@@ -71,7 +71,7 @@ body {
 
     h2 {
       border-bottom: 1px solid $light-gray;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       padding-bottom: .5rem;
     }
 
@@ -131,25 +131,36 @@ body {
   height: 100%;
 }
 
-.overlay-851,
-.overlay-70,
-.overlay-71,
-.overlay-72,
-.overlay-73,
-.overlay-74,
-.overlay-50 {
+.overlay-a,
+.overlay-b,
+.overlay-c,
+.overlay-d,
+.overlay-e,
+.overlay-f,
+.overlay-g {
   position: absolute;
   height: 100%;
   width: 100%;
   right: 0;
 }
 
-.overlay-851 {
-  background: url("../img/transparent-85-1.png") repeat;
+.overlay-a {
+  background: url("../img/overlay-a.png") repeat;
 }
 
-.overlay-50 {
-  background: url("../img/transparent-50.png") repeat;
+.overlay-b {
+  background: url("../img/overlay-b.png") repeat;
+}
+
+.overlay-c {
+  background: url("../img/overlay-c.png") repeat;
+}
+.overlay-d {
+  background: url("../img/overlay-d.png") repeat;
+}
+
+.overlay-e {
+  background: url("../img/overlay-e.png") repeat;
 }
 
 .text-inverted {
@@ -272,6 +283,17 @@ body {
     padding: 0;
   }
 }
+
+/*@media screen and (min-width: 90em) {
+
+  .page-wrapper {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    max-width: 100rem;
+    padding: 0;
+  }
+}*/
 
 @media screen and (min-width: 105em) {
 

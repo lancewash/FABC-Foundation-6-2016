@@ -16,6 +16,15 @@
 }
 
 @font-face {
+  font-family: 'playfair_displayregular';
+  src: url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+  url('fonts/playfairdisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
   font-family: 'proxima_nova_ththin';
   src: url('fonts/proxima_nova_thin-webfont.eot');
   src: url('fonts/proxima_nova_thin-webfont.eot?#iefix') format('embedded-opentype'),
