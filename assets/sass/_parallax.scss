@@ -17,6 +17,7 @@
 .parallax-container {
   position: relative;
 
+
   h1,
   h2,
   h3,
@@ -37,4 +38,8 @@
   //background-size: cover;
   //width: 100%;
   //height: calc(100vh - 200px);
+}
+
+.parallax {
+  max-height: 400px;
 }

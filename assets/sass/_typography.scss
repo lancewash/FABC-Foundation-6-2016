@@ -4,11 +4,15 @@
 =======================================================================
 */
 
-p {
-  font-size: 1.25rem;
+p, li, a {
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  //margin-bottom: .5rem;
   text-rendering: optimizeLegibility; }
+
+p {
+  margin-bottom: .5rem;
+}
 
 em,
 i {
@@ -17,8 +21,18 @@ i {
 
 strong,
 b {
+
+  font-family: $base-font-bolder;
   font-weight: bold;
   line-height: inherit; }
+
+strong {
+  color: $secondary-color;
+}
+
+b {
+  color: $dark-blue;
+}
 
 small {
   font-size: 80%;

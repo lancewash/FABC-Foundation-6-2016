@@ -5,14 +5,14 @@
 */
 
 .menu,
-.quick-links{
+.quick-links {
   margin: 0;
   list-style-type: none;
-  font-size: .9rem;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-family: $base-font-bolder;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -24,129 +24,184 @@
   flex-wrap: nowrap;
   //padding: 1.5rem 3rem;
 
-    a {
-      color: $white;
-      text-transform: uppercase;
-    }
+  a {
+    color: $white;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
 }
+
 .menu > li {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
+  flex: 0 0 auto;
+}
+
 [data-whatinput='mouse'] .menu > li {
-  outline: 0; }
+  outline: 0;
+}
+
 .menu > li > a {
   display: block;
   padding: 2.25rem;
-  line-height: 1; }
+  line-height: 1;
+  transition: all .35s ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, .2);
+  }
+}
+
 .menu input,
 .menu a,
 .menu button {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
+
 .menu > li > a {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+}
+
 .menu > li > a {
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+}
+
 .menu > li > a img,
 .menu > li > a i,
 .menu > li > a svg {
-  margin-right: 0.25rem; }
+  margin-right: 0.25rem;
+}
+
 .menu > li {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
+  flex: 0 0 auto;
+}
+
 .menu.vertical {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
+
 .menu.vertical > li {
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  max-width: 100%; }
+  max-width: 100%;
+}
+
 .menu.vertical > li > a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
+
 @media screen and (min-width: 40em) {
   .menu.medium-horizontal {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+  }
   .menu.medium-horizontal > li {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto; }
+    flex: 0 0 auto;
+  }
   .menu.medium-vertical {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .menu.medium-vertical > li {
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%; }
+    max-width: 100%;
+  }
   .menu.medium-vertical > li > a {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (min-width: 64em) {
   .menu.large-horizontal {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+  }
   .menu.large-horizontal > li {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto; }
+    flex: 0 0 auto;
+  }
   .menu.large-vertical {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .menu.large-vertical > li {
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%; }
+    max-width: 100%;
+  }
   .menu.large-vertical > li > a {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+  }
+}
+
 .menu.simple li {
   line-height: 1;
   display: inline-block;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+}
+
 .menu.simple a {
-  padding: 0; }
+  padding: 0;
+}
+
 .menu.align-right {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   //padding-right: 2rem;
-  }
+}
+
 .menu.expanded > li {
   -webkit-flex: 1 1 0px;
   -ms-flex: 1 1 0px;
-  flex: 1 1 0px; }
+  flex: 1 1 0px;
+}
+
 .menu.expanded > li:first-child:last-child {
-  width: 100%; }
+  width: 100%;
+}
+
 .menu.icon-top > li > a {
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+}
+
 .menu.icon-top > li > a img,
 .menu.icon-top > li > a i,
 .menu.icon-top > li > a svg {
@@ -154,12 +209,17 @@
   -ms-flex-item-align: stretch;
   align-self: stretch;
   text-align: center;
-  margin-bottom: 0.25rem; }
+  margin-bottom: 0.25rem;
+}
+
 .menu.nested {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
+
 .menu .active > a {
   color: #fefefe;
-  background: #2ba6cb; }
+  background: #2ba6cb;
+}
 
 .menu-text {
   font-weight: bold;
@@ -167,21 +227,29 @@
   line-height: 1;
   padding-top: 0;
   padding-bottom: 0;
-  padding: 0.7rem 1rem; }
+  padding: 0.7rem 1rem;
+}
 
 .menu-centered {
-  text-align: center; }
+  text-align: center;
+}
+
 .menu-centered > .menu {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .no-js [data-responsive-menu] ul {
-  display: none; }
+  display: none;
+}
 
 .is-drilldown {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
+
 .is-drilldown li {
-  display: block !important; }
+  display: block !important;
+}
 
 .is-drilldown-submenu {
   position: absolute;
@@ -192,20 +260,27 @@
   width: 100%;
   background: #fefefe;
   transition: -webkit-transform 0.15s linear;
-  transition: transform 0.15s linear; }
+  transition: transform 0.15s linear;
+}
+
 .is-drilldown-submenu.is-active {
   z-index: 1;
   display: block;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
-  transform: translateX(-100%); }
+  transform: translateX(-100%);
+}
+
 .is-drilldown-submenu.is-closing {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
-  transform: translateX(100%); }
+  transform: translateX(100%);
+}
 
 .is-drilldown-submenu-parent > a {
-  position: relative; }
+  position: relative;
+}
+
 .is-drilldown-submenu-parent > a::after {
   content: '';
   display: block;
@@ -218,7 +293,8 @@
   position: absolute;
   top: 50%;
   margin-top: -6px;
-  right: 1rem; }
+  right: 1rem;
+}
 
 .js-drilldown-back > a::before {
   content: '';
@@ -232,4 +308,5 @@
   border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.75rem; }
+  margin-right: 0.75rem;
+}

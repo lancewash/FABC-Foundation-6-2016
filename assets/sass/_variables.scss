@@ -1,5 +1,7 @@
 
-$base-font: 'proxima_nova_ththin', Helvetica, Arial, sans-serif;
+$base-font: 'proxima_nova_ltlight','proxima_nova_ththin', Helvetica, Arial, sans-serif;
+$base-font-bold: 'proxima_novasemibold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-bolder: 'proxima_novaextrabold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading-font-bold: 'playfair_displaybold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading-font-regular: 'playfair_displayregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -7,10 +9,11 @@ $heading-font-regular: 'playfair_displayregular', "Helvetica Neue", Helvetica, A
 /*  Colors */
 
 $primary-color: #390C06;
-$secondary-color: #5B1700;
+$secondary-color: #C44427;
+$tertiary-color: #5B1700;
 $white: #fff;
 $light-gray: #eee;
 $medium-gray: #777;
 $dark-gray: #354545;
 $dark-blue: #003247;
-$link-color: #C44426;
+$link-color: #C44427;

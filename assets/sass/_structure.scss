@@ -30,7 +30,7 @@ body {
 //}
 
 .quick-links {
-  background: $secondary-color;
+  background: $tertiary-color;
 
   a {
     color: $white;
@@ -70,9 +70,20 @@ body {
   article {
 
     h2 {
-      border-bottom: 1px solid $light-gray;
-      margin-bottom: 2rem;
+      //border-bottom: 1px solid $light-gray;
+      margin-bottom: 2.5rem;
       padding-bottom: .5rem;
+      position: relative;
+      
+      &:after {
+        background: $secondary-color;
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        height: 2px;
+        width: 3rem;
+      }
     }
 
     h3 {
@@ -99,7 +110,7 @@ body {
   }
 
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   &.end, &.begin {
@@ -137,7 +148,8 @@ body {
 .overlay-d,
 .overlay-e,
 .overlay-f,
-.overlay-g {
+.overlay-g,
+.overlay-h {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -162,7 +174,19 @@ body {
 .overlay-e {
   background: url("../img/overlay-e.png") repeat;
 }
+.overlay-f {
+  background: url("../img/overlay-f.png") repeat;
+}
 
+.overlay-g {
+  background: url("../img/overlay-g.png") repeat;
+}
+.overlay-h {
+  background: url("../img/overlay-h.png") repeat;
+}
+.overlay-h {
+  background: url("../img/overlay-h.png") repeat;
+}
 .text-inverted {
   color: $white;
 }
@@ -185,7 +209,20 @@ body {
   h1 {
     font-size: 4.5rem;
     line-height: .6;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
+    position: relative;
+
+    &:after {
+      background: $secondary-color;
+      content: '';
+      margin: 0 auto;
+      position: absolute;
+      bottom: -3rem;
+      left: 0;
+      right: 0;
+      height: 2px;
+      width: 4rem;
+    }
   }
 
   p {
@@ -194,7 +231,7 @@ body {
 }
 
 .intro-img {
-  margin-top: -9rem;
+  margin-top: -8rem;
 
   img {
     display: block;
@@ -202,6 +239,9 @@ body {
   }
 
   p {
+    font-size: 1rem;
+    color: $dark-blue;
+    line-height: 1.25;
     text-align: center;
   }
 
@@ -241,9 +281,9 @@ body {
 .ministries-4 {
   
   .column, .columns {
-    background: #ccc;
     height: 100px;
     border-left: 1px solid $white;
+    padding: 0;
     
     
     * {
@@ -254,6 +294,31 @@ body {
       display: flex;
     }
   }
+}
+
+.bookstore a,
+.n2n a,
+.bw-watkins a,
+.credit-union a {
+  color: $white;
+  font-family: $base-font-bolder;
+  line-height: 1.1;
+}
+
+.bookstore {
+  background: #D7AA15;
+}
+
+.n2n {
+  background: #00577A;
+}
+
+.bw-watkins {
+  background: #A1341B;
+}
+
+.credit-union {
+  background: #585F32;
 }
 
 /*=================================

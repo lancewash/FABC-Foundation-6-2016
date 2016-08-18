@@ -2767,11 +2767,14 @@ td {
 ============================= Typography ==============================
 =======================================================================
 */
-p {
-  font-size: 1.25rem;
+p, li, a {
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
   text-rendering: optimizeLegibility;
+}
+
+p {
+  margin-bottom: .5rem;
 }
 
 em,
@@ -2782,8 +2785,17 @@ i {
 
 strong,
 b {
+  font-family: "proxima_novaextrabold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: inherit;
+}
+
+strong {
+  color: #C44427;
+}
+
+b {
+  color: #003247;
 }
 
 small {
@@ -2842,7 +2854,7 @@ h6 {
 }
 
 a {
-  color: #C44426;
+  color: #C44427;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
@@ -3120,9 +3132,51 @@ p + .stat {
 }
 
 @font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("fonts/proximanova-bold-webfont.woff2") format("woff2"), url("fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaextrabold';
+  src: url("fonts/proxima_nova-extrabold-webfont.woff2") format("woff2"), url("fonts/proxima_nova-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("fonts/proximanova-light-webfont.woff2") format("woff2"), url("fonts/proximanova-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("fonts/proximanova-reg-webfont.woff2") format("woff2"), url("fonts/proximanova-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'proxima_nova_ththin';
   src: url("fonts/proxima_nova_thin-webfont.eot");
   src: url("fonts/proxima_nova_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_thin-webfont.woff2") format("woff2"), url("fonts/proxima_nova_thin-webfont.woff") format("woff"), url("fonts/proxima_nova_thin-webfont.ttf") format("truetype"), url("fonts/proxima_nova_thin-webfont.svg#proxima_nova_ththin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("fonts/proxima_nova-semibold-webfont.woff2") format("woff2"), url("fonts/proxima_nova-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_blblack';
+  src: url("fonts/proximanova-black-webfont.woff2") format("woff2"), url("fonts/proximanova-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -3136,11 +3190,11 @@ p + .stat {
 .quick-links {
   margin: 0;
   list-style-type: none;
-  font-size: .9rem;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-family: "proxima_novaextrabold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3155,6 +3209,8 @@ p + .stat {
 .menu a,
 .quick-links a {
   color: #fff;
+  font-size: .9rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
 }
 
@@ -3172,6 +3228,11 @@ p + .stat {
   display: block;
   padding: 2.25rem;
   line-height: 1;
+  transition: all 0.35s ease-in-out;
+}
+
+.menu > li > a:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .menu input,
@@ -3439,17 +3500,20 @@ p + .stat {
 .button {
   display: inline-block;
   text-align: center;
+  letter-spacing: .15rem;
   line-height: 1;
   cursor: pointer;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  padding: 0.85em 1em;
+  padding: 1.25em 3.5em;
   margin: 0 0 1rem 0;
-  font-size: 0.9rem;
-  background-color: #2ba6cb;
-  color: #fefefe;
+  font-family: "proxima_novasemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #C44427;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 [data-whatinput='mouse'] .button {
@@ -3481,13 +3545,14 @@ p + .stat {
 }
 
 .button.primary {
-  background-color: #2ba6cb;
-  color: #fefefe;
+  background-color: #C44427;
+  color: #fff;
+  min-width: 220px;
 }
 
 .button.primary:hover, .button.primary:focus {
-  background-color: #2285a2;
-  color: #fefefe;
+  background-color: #af3d23;
+  color: #fff;
 }
 
 .button.secondary {
@@ -3831,7 +3896,7 @@ p + .stat {
 }
 
 .v-stretch {
-  bottom: 2rem;
+  bottom: 4rem;
   position: absolute;
 }
 
@@ -5628,7 +5693,7 @@ html.is-reveal-open body {
 =======================================================================
 */
 body {
-  font-family: "proxima_nova_ththin", Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_ltlight", "proxima_nova_ththin", Helvetica, Arial, sans-serif;
   color: #777;
 }
 
@@ -5676,9 +5741,19 @@ body {
 }
 
 .columns article h2 {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-bottom: .5rem;
+  position: relative;
+}
+
+.columns article h2:after {
+  background: #C44427;
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  height: 2px;
+  width: 3rem;
 }
 
 .columns article h3 {
@@ -5694,7 +5769,7 @@ body {
 }
 
 .column h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .column.end, .column.begin {
@@ -5723,7 +5798,8 @@ nav .content-item {
 .overlay-d,
 .overlay-e,
 .overlay-f,
-.overlay-g {
+.overlay-g,
+.overlay-h {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -5750,6 +5826,22 @@ nav .content-item {
   background: url("../img/overlay-e.png") repeat;
 }
 
+.overlay-f {
+  background: url("../img/overlay-f.png") repeat;
+}
+
+.overlay-g {
+  background: url("../img/overlay-g.png") repeat;
+}
+
+.overlay-h {
+  background: url("../img/overlay-h.png") repeat;
+}
+
+.overlay-h {
+  background: url("../img/overlay-h.png") repeat;
+}
+
 .text-inverted {
   color: #fff;
 }
@@ -5767,7 +5859,20 @@ nav .content-item {
 .intro-text h1 {
   font-size: 4.5rem;
   line-height: .6;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.intro-text h1:after {
+  background: #C44427;
+  content: '';
+  margin: 0 auto;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 4rem;
 }
 
 .intro-text p {
@@ -5775,7 +5880,7 @@ nav .content-item {
 }
 
 .intro-img {
-  margin-top: -9rem;
+  margin-top: -8rem;
 }
 
 .intro-img img {
@@ -5784,6 +5889,9 @@ nav .content-item {
 }
 
 .intro-img p {
+  font-size: 1rem;
+  color: #003247;
+  line-height: 1.25;
   text-align: center;
 }
 
@@ -5792,7 +5900,7 @@ nav .content-item {
 }
 
 .news-link h4 {
-  color: #C44426;
+  color: #C44427;
   margin-bottom: 0;
 }
 
@@ -5812,9 +5920,9 @@ nav .content-item {
 }
 
 .ministries-4 .column, .ministries-4 .columns {
-  background: #ccc;
   height: 100px;
   border-left: 1px solid #fff;
+  padding: 0;
 }
 
 .ministries-4 .column *, .ministries-4 .columns * {
@@ -5823,6 +5931,31 @@ nav .content-item {
   align-items: center;
   height: 100%;
   display: flex;
+}
+
+.bookstore a,
+.n2n a,
+.bw-watkins a,
+.credit-union a {
+  color: #fff;
+  font-family: "proxima_novaextrabold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+}
+
+.bookstore {
+  background: #D7AA15;
+}
+
+.n2n {
+  background: #00577A;
+}
+
+.bw-watkins {
+  background: #A1341B;
+}
+
+.credit-union {
+  background: #585F32;
 }
 
 /*=================================
@@ -5940,7 +6073,7 @@ nav .content-item {
 =======================================================================
 */
 .banner-wrap {
-  height: calc(84vh - 160px);
+  height: calc(78vh - 160px);
   background-size: cover;
   width: 100%;
   position: relative;
@@ -5992,6 +6125,10 @@ nav .content-item {
 
 .parallax-container p {
   font-size: 1rem;
+}
+
+.parallax {
+  max-height: 400px;
 }
 
 /*
