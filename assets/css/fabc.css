@@ -3214,10 +3214,18 @@ p + .stat {
   text-transform: uppercase;
 }
 
-.menu > li {
+.menu-main.menu > li {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.menu-main.menu > li:last-child {
+  background: #842e1a;
+}
+
+.menu-main.menu > li:last-child:hover a {
+  background: #C44427;
 }
 
 [data-whatinput='mouse'] .menu > li {
@@ -3232,7 +3240,7 @@ p + .stat {
 }
 
 .menu > li > a:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: #5a1f12;
 }
 
 .menu input,
@@ -3490,6 +3498,12 @@ p + .stat {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 90em) {
+  .menu a, .quick-links a {
+    font-size: .8rem;
+  }
 }
 
 /*
@@ -5726,7 +5740,7 @@ body {
 .logo img {
   position: absolute;
   top: 2rem;
-  left: 11rem;
+  left: 3rem;
   z-index: 10;
 }
 
@@ -6000,7 +6014,7 @@ nav .content-item {
   .logo img {
     position: absolute;
     top: 2rem;
-    left: 5rem;
+    left: 1rem;
     z-index: 10;
   }
 }
