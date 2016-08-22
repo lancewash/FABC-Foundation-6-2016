@@ -3514,14 +3514,14 @@ p + .stat {
 .button {
   display: inline-block;
   text-align: center;
-  letter-spacing: .15rem;
+  letter-spacing: .25rem;
   line-height: 1;
   cursor: pointer;
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  padding: 1.25em 3.5em;
+  padding: 1.5em 3.5em;
   margin: 0 0 1rem 0;
   font-family: "proxima_novasemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
@@ -3561,7 +3561,7 @@ p + .stat {
 .button.primary {
   background-color: #C44427;
   color: #fff;
-  min-width: 220px;
+  min-width: 280px;
 }
 
 .button.primary:hover, .button.primary:focus {
@@ -3910,7 +3910,7 @@ p + .stat {
 }
 
 .v-stretch {
-  bottom: 4rem;
+  bottom: 2rem;
   position: absolute;
 }
 
@@ -5771,7 +5771,6 @@ body {
 }
 
 .columns article h3 {
-  border-bottom: 1px solid #eee;
   margin-top: .5rem;
   margin-bottom: 2rem;
   padding-bottom: .75rem;
@@ -5794,8 +5793,13 @@ body {
 }
 
 .content-item {
-  padding: 3.5rem 0 5rem 3.5rem;
+  padding: 0 0 5rem 3.5rem;
   position: relative;
+}
+
+.content-item h2, .content-item h3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 3.5rem;
 }
 
 nav .content-item {
