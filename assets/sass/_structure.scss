@@ -113,8 +113,8 @@ body {
   }
 
   &.end, &.begin {
-    border-bottom: 1px solid $white;
-    border-top: 1px solid $white;
+    //border-bottom: 1px solid $white;
+    //border-top: 1px solid $white;
     padding-right: 0;
     position: relative;
   }
@@ -133,13 +133,25 @@ body {
   position: relative;
 
   h2, h3 {
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .05);
     padding-top: 3.5rem;
   }
 
   nav & {
     padding-top: 0;
   }
+}
+
+.worship-times-callout {
+  background: $dark-blue;
+}
+
+.current-events-callout {
+  background: $secondary-color;
+}
+
+.ministries-callout {
+  background: $dark-gray;
 }
 
 .vh-100 {
@@ -286,7 +298,7 @@ body {
   
   .column, .columns {
     height: 100px;
-    border-left: 1px solid $white;
+    //border-left: 1px solid $white;
     padding: 0;
     
     

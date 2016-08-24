@@ -38,10 +38,10 @@
   flex: 0 0 auto;
   
   &:last-child {
-    background: darken($secondary-color, 15%);
+    background: $tertiary-color;
     
     &:hover a {
-      background: $secondary-color;
+      background: lighten($tertiary-color, 5%);
     }
   }
 }
@@ -323,6 +323,7 @@
 @media screen and (max-width: 90em) {
 
   .menu a, .quick-links a {
+    color: $white;
     font-size: .8rem;
   }
 

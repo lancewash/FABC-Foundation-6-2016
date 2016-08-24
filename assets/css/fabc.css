@@ -2795,7 +2795,7 @@ strong {
 }
 
 b {
-  color: #003247;
+  color: #004462;
 }
 
 small {
@@ -2812,7 +2812,7 @@ h6 {
   font-family: "playfair_displaybold", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: normal;
   font-style: normal;
-  color: #003247;
+  color: #004462;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2851,6 +2851,24 @@ h5 {
 
 h6 {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 90em) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.65rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
 }
 
 a {
@@ -3112,6 +3130,24 @@ p + .stat {
   }
 }
 
+@media screen and (max-width: 90em) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.65rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
 /*
 =======================================================================
 ================================ Fonts ================================
@@ -3221,11 +3257,11 @@ p + .stat {
 }
 
 .menu-main.menu > li:last-child {
-  background: #842e1a;
+  background: #5B1700;
 }
 
 .menu-main.menu > li:last-child:hover a {
-  background: #C44427;
+  background: #751d00;
 }
 
 [data-whatinput='mouse'] .menu > li {
@@ -3502,6 +3538,7 @@ p + .stat {
 
 @media screen and (max-width: 90em) {
   .menu a, .quick-links a {
+    color: #fff;
     font-size: .8rem;
   }
 }
@@ -5786,8 +5823,6 @@ body {
 }
 
 .column.end, .column.begin {
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
   padding-right: 0;
   position: relative;
 }
@@ -5798,12 +5833,24 @@ body {
 }
 
 .content-item h2, .content-item h3 {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 3.5rem;
 }
 
 nav .content-item {
   padding-top: 0;
+}
+
+.worship-times-callout {
+  background: #004462;
+}
+
+.current-events-callout {
+  background: #C44427;
+}
+
+.ministries-callout {
+  background: #354545;
 }
 
 .vh-100 {
@@ -5908,7 +5955,7 @@ nav .content-item {
 
 .intro-img p {
   font-size: 1rem;
-  color: #003247;
+  color: #004462;
   line-height: 1.25;
   text-align: center;
 }
@@ -5939,7 +5986,6 @@ nav .content-item {
 
 .ministries-4 .column, .ministries-4 .columns {
   height: 100px;
-  border-left: 1px solid #fff;
   padding: 0;
 }
 
