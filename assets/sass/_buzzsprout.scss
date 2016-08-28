@@ -7,3 +7,25 @@
 .episode {
   margin-bottom: -35px;
 }
+
+div.episode {
+
+  h3.episode_name {
+
+  text-align: center !important;
+  width: 100% !important;
+  }
+  span {
+    color: $white;
+  }
+
+  div.meta {
+    .date, .artist,  {
+      color: $white !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  .description {
+    color: $white !important;
+  }
+}

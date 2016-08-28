@@ -29,18 +29,7 @@ body {
 //  height: 100vh;
 //}
 
-.quick-links {
-  background: $tertiary-color;
 
-  a {
-    color: $white;
-    padding: 2rem;
-    text-transform: uppercase;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-}
 
 .logo {
   position: relative;
@@ -67,6 +56,28 @@ body {
 
 .columns {
 
+  &.text-center {
+
+    article {
+
+      align-items: center;
+
+      h2 {
+
+        margin-bottom: 0;
+
+        &:after {
+          left: 0;
+          margin: 0 auto;
+          right: 0;
+          height: 2px;
+          width: 3rem;
+        }
+      }
+    }
+
+  }
+
   article {
 
     h2 {
@@ -85,6 +96,10 @@ body {
         width: 3rem;
       }
     }
+    
+    //.text-center & {
+    //  color: #000;
+    //}
 
     h3 {
       margin-top: .5rem;
@@ -131,6 +146,12 @@ body {
 .main-content-wrap {
 
   background: $xlight-gray;
+
+  .content-item-1 {
+    background: $light-gray;
+    padding-right: 3.5rem;
+    
+  }
 }
 
 .content-item {
@@ -148,17 +169,90 @@ body {
   }
 }
 
+.quick-links {
+  background: $tertiary-color;
+  height: calc(84vh - 180px);
+  padding: 0;
+  position: relative;
+  
+  a {
+    color: $white;
+    display: block;
+    letter-spacing: 2px;
+    list-style-type: none;
+    align-self: stretch;
+    flex-basis: 7%;
+    //display: -webkit-flex;
+    //display: -ms-flexbox;
+    //display: flex;
+    font-family: $base-font-bolder;
+    font-size: .9rem;
+    font-weight: 100;
+    //margin: 0 auto;
+    //left: 0;
+    //right: 0;
+    //-webkit-flex-wrap: nowrap;
+    //-ms-flex-wrap: nowrap;
+    //flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    text-transform: uppercase;
+    //-webkit-flex: 0 0 auto;
+    //-ms-flex: 0 0 auto;
+    //flex: 0 0 auto;
+    //height: 100%;
+    //width: 100%;
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+
+    /* IE */
+    -ms-transform: rotate(90deg);
+
+    /* Opera */
+    -o-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
 .worship-times-callout {
   background: $dark-blue;
+  max-height: 700px !important;
+  min-height: 600px;
 }
 
 .current-events-callout {
   background: $secondary-color;
+  max-height: 800px !important;
+  min-height: 700px;
 }
 
 .ministries-callout {
   background: $dark-gray;
+  max-height: 800px !important;
+  min-height: 700px;
 }
+
+//.worship-times-callout {
+//
+//}
+//
+//.current-events-callout {
+//
+//}
+//
+//.ministries-callout {
+//
+//}
 
 .vh-100 {
   height: 100%;
@@ -293,20 +387,7 @@ body {
   }
 }
 
-.worship-times-callout {
-  max-height: 600px !important;
-  min-height: 500px;
-}
 
-.current-events-callout {
-  max-height: 700px !important;
-  min-height: 600px;
-}
-
-.ministries-callout {
-  max-height: 800px !important;
-  min-height: 700px;
-}
 
 .ministries-4 {
   

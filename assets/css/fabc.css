@@ -3222,8 +3222,7 @@ p + .stat {
 =============================== Menu ==================================
 =======================================================================
 */
-.menu,
-.quick-links {
+.menu {
   margin: 0;
   list-style-type: none;
   width: 100%;
@@ -3242,8 +3241,7 @@ p + .stat {
   flex-wrap: nowrap;
 }
 
-.menu a,
-.quick-links a {
+.menu a {
   color: #fff;
   font-size: .9rem;
   letter-spacing: .1rem;
@@ -5757,19 +5755,6 @@ body {
   padding: 30px;
 }
 
-.quick-links {
-  background: #5B1700;
-}
-
-.quick-links a {
-  color: #fff;
-  padding: 2rem;
-  text-transform: uppercase;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
 .logo {
   position: relative;
 }
@@ -5789,6 +5774,22 @@ body {
 .columns.begin,
 .column.begin {
   padding-left: 0;
+}
+
+.columns.text-center article {
+  align-items: center;
+}
+
+.columns.text-center article h2 {
+  margin-bottom: 0;
+}
+
+.columns.text-center article h2:after {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  height: 2px;
+  width: 3rem;
 }
 
 .columns article h2 {
@@ -5831,6 +5832,11 @@ body {
   background: #f5f5f5;
 }
 
+.main-content-wrap .content-item-1 {
+  background: #eee;
+  padding-right: 3.5rem;
+}
+
 .content-item {
   padding: 0 0 5rem 3.5rem;
   position: relative;
@@ -5844,16 +5850,58 @@ nav .content-item {
   padding-top: 0;
 }
 
+.quick-links {
+  background: #5B1700;
+  height: calc(84vh - 180px);
+  padding: 0;
+  position: relative;
+}
+
+.quick-links a {
+  color: #fff;
+  display: block;
+  letter-spacing: 2px;
+  list-style-type: none;
+  align-self: stretch;
+  flex-basis: 7%;
+  font-family: "proxima_novaextrabold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .9rem;
+  font-weight: 100;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 42%;
+  text-transform: uppercase;
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 .worship-times-callout {
   background: #004462;
+  max-height: 700px !important;
+  min-height: 600px;
 }
 
 .current-events-callout {
   background: #C44427;
+  max-height: 800px !important;
+  min-height: 700px;
 }
 
 .ministries-callout {
   background: #354545;
+  max-height: 800px !important;
+  min-height: 700px;
 }
 
 .vh-100 {
@@ -5974,21 +6022,6 @@ nav .content-item {
 
 .grid-4 {
   padding: 0.9375rem;
-}
-
-.worship-times-callout {
-  max-height: 600px !important;
-  min-height: 500px;
-}
-
-.current-events-callout {
-  max-height: 700px !important;
-  min-height: 600px;
-}
-
-.ministries-callout {
-  max-height: 800px !important;
-  min-height: 700px;
 }
 
 .ministries-4 .column, .ministries-4 .columns {
@@ -6199,7 +6232,7 @@ nav .content-item {
 }
 
 .parallax {
-  max-height: 400px;
+  max-height: 600px;
 }
 
 /*
@@ -6209,6 +6242,24 @@ nav .content-item {
 */
 .episode {
   margin-bottom: -35px;
+}
+
+div.episode h3.episode_name {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+div.episode span {
+  color: #fff;
+}
+
+div.episode div.meta .date, div.episode div.meta .artist {
+  color: #fff !important;
+  padding-bottom: 0 !important;
+}
+
+div.episode .description {
+  color: #fff !important;
 }
 
 .hamburger {
