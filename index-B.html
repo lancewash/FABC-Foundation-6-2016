@@ -11,7 +11,7 @@
 <div class="page-wrapper">
     <div class="header-intro">
         <div class="row">
-            <div class="[ large-16 columns ] header-wrapper">
+            <div class="[ large-14 columns ] header-wrapper">
                 <header class="header">
                     <div class="row">
                         <a href="" class="logo large-5">
@@ -23,16 +23,20 @@
                                 <li><a href="">Ministries</a></li>
                                 <li><a href="">News & Events</a></li>
                                 <li><a href="">History</a></li>
-                                <li><a href="">Online Giving</a></li>
+                                <!--<li><a href="">Online Giving</a></li>-->
                             </ul>
                         </nav>
-                        <button class="large-1 hamburger hamburger--squeeze" type="button">
-                              <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                              </span>
-                        </button>
+
                     </div>
                 </header>
+            </div>
+            <div class="[ large-2 columns ] header-wrapper">
+                <a href="">Online Giving</a>
+                <button class="hamburger" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+                </button>
             </div>
         </div>
         <div class="row">
@@ -91,7 +95,7 @@
         </div>
 
         <main>
-            <section class="row main-content-intro main-content-wrap">
+            <section class="row main-content-intro">
                 <div class="[ xlarge-5 medium-8 columns ]">
                     <article class="content-item vh-100">
                         <!--The Pastor’s Desk-->
@@ -159,26 +163,21 @@
                  data-image-src="assets/img/fabc-banner-1.jpg" data-natural-width="1600" data-natural-height="591"
                  style="height: 360px;">
                 <div class="overlay-b"></div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="large-10 columns">
                         <article class="content-item">
                             <h2>Sunday Sermon</h2>
-
-                            <!--<script src="http://www.buzzsprout.com/8786.js?player=small&limit=1&beta="
-                                    type="text/javascript"
-                                    charset="utf-8"></script>-->
                             <script type='text/javascript' charset='utf-8'
                                     src='https://www.buzzsprout.com/8786.js?player=small&limit=1'></script>
                         </article>
                     </div>
-                </div>
+                </div>-->
             </div>
-            <section class="row news-events-intro main-content-wrap">
+            <section class="row news-events-intro">
                 <div class="[ large-8 medium-16 column begin ] parallax-container current-events-callout text-inverted">
-                    <article class="vh-100">
+                    <article>
                         <!--Today at First African Baptist Church-->
                         <h4>Today at First African Baptist Church</h4>
-                        <a href="" class="button primary v-stretch">Event Signup popup</a>
                     </article>
                 </div>
                 <div class="[ xxxlarge-8 large-10 medium-8 columns ]">
@@ -208,7 +207,7 @@
                         <a href="" class="button primary v-stretch">View All News & Events</a>
                     </article>
                 </div>
-                <!--<div class="[ xxxlarge-4 medium-12 columns ]">
+                <div class="[ xxxlarge-4 medium-12 columns ]">
                     <article class="content-item">
                         <h3>Sign Up for Events</h3>
                         <ul>
@@ -217,7 +216,7 @@
                             <li><a href="">List Item One</a></li>
                         </ul>
                     </article>
-                </div>-->
+                </div>
             </section>
             <!--<section class="row">
 
@@ -228,7 +227,7 @@
                 <div class="overlay-b"></div>
 
             </div>
-            <section class="row ministries-intro main-content-wrap">
+            <section class="row ministries-intro">
                 <div class="[ large-8 columns ]">
                     <!--Ministries-->
                     <article class="content-item">
@@ -348,18 +347,5 @@
     });
 </script>
 <script src="assets/js/parallax.js"></script>
-<script src="assets/js/hamburgers.js" async></script>
-<script>
-    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-            hamburger.addEventListener("click", function() {
-                this.classList.toggle("is-active");
-            }, false);
-        });
-    }
-</script>
 </body>
 </html>
