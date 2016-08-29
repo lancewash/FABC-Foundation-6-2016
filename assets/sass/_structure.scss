@@ -437,8 +437,19 @@ body {
          Media Queries
 
 ==================================*/
+@media screen and (min-width: 120em) {
 
-/*@media screen and (min-width: 105em) {
+  .page-wrapper {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    max-width: 120rem;
+    padding: 30px;
+  }
+}
+
+
+@media screen and (min-width: 105em) {
 
   .page-wrapper {
     box-shadow: 0 0 20px rgba(0,0,0,.2);
@@ -447,18 +458,8 @@ body {
     max-width: 110rem;
     padding: 0;
   }
-}*/
-
-@media screen and (min-width: 120em) {
-
-  .page-wrapper {
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-    border-left: 1px solid rgba(0, 0, 0, .1);
-    border-right: 1px solid rgba(0,0,0,.1);
-    max-width: 120rem;
-    padding: 0;
-  }
 }
+
 
 /*@media screen and (min-width: 90em) {
 
