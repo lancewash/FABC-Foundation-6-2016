@@ -5,6 +5,7 @@
 */
 
 .button {
+  border: 1px solid rgba(255,255,255,.25);
   display: inline-block;
   text-align: center;
   letter-spacing: .25rem;
@@ -13,15 +14,16 @@
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
-  border: 1px solid transparent;
   //border-radius: 3px;
   padding: 1.5em 3.5em;
   margin: 0 0 1rem 0;
   font-family: $base-font-bold;
   font-size: 0.8rem;
-  background-color: $secondary-color;
+  background-color: darken( $secondary-color, 5% );
   color: #fff;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+  @include transition(all .3s ease-in-out);
+}
 [data-whatinput='mouse'] .button {
   outline: 0; }
 .button:hover, .button:focus {
@@ -39,18 +41,29 @@
   margin-left: 0;
   margin-right: 0; }
 .button.primary {
-  background-color: $secondary-color;
-  color: $white;
-min-width: 280px}
-.button.primary:hover, .button.primary:focus {
   background-color: darken( $secondary-color, 5% );
-  color: $white; }
+  color: $white;
+  min-width: 280px}
+.button.primary:hover, .button.primary:focus {
+  background-color: $white;
+  border-color: lighten($secondary-color, 33%);
+  color: $secondary-color; }
 .button.secondary {
   background-color: #e9e9e9;
   color: #0a0a0a; }
 .button.secondary:hover, .button.secondary:focus {
   background-color: #bababa;
   color: #0a0a0a; }
+.button.inverse {
+  background-color: $white;
+  color: $secondary-color;
+  
+  &:hover, &:focus {
+    background-color: transparent;
+    border-color: &white;
+    color: $white;
+  }
+}
 .button.alert {
   background-color: #c60f13;
   color: #fefefe; }

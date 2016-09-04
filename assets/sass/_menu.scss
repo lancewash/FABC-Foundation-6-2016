@@ -38,6 +38,10 @@
   
   &:last-child {
     background: $tertiary-color;
+    padding-top: 2rem;
+    position: absolute;
+    right: 0;
+    width: 100px;
     
     &:hover a {
       background: lighten($tertiary-color, 5%);

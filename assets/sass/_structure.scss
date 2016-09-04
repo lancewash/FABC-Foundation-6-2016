@@ -33,13 +33,29 @@ body {
 
 .logo {
   position: relative;
-
-  img {
-    position: absolute;
-    top: 2rem;
-    left: 3rem;
-    z-index: 10;
+  background: url("../img/fabc-logo.png") no-repeat;
+  height: 257px !important;
+  width: 211px;
+  top: 10rem;
+  left: 4rem;
+  z-index: 10;
+  @include transition(all .5s ease-in-out);
+  
+  .is-hidden & {
+    background: url("../img/fabc-joy-logo-small.png") no-repeat;
+    height: 42px !important;
+    left: 5rem;
+    top: 2.65rem;
+    width: 175px;
   }
+
+  //img {
+  //  //position: absolute;
+  //  top: 2rem;
+  //  left: 3rem;
+  //  z-index: 10;
+  //
+  //}
 }
 
 .columns,
@@ -443,7 +459,7 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,.2);
     border-left: 1px solid rgba(0, 0, 0, .1);
     border-right: 1px solid rgba(0,0,0,.1);
-    max-width: 120rem;
+    max-width: 110rem;
     padding: 30px;
   }
 }
@@ -455,22 +471,22 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,.2);
     border-left: 1px solid rgba(0, 0, 0, .1);
     border-right: 1px solid rgba(0,0,0,.1);
-    max-width: 110rem;
+    max-width: 100rem;
     padding: 0;
   }
 }
 
 
-/*@media screen and (min-width: 90em) {
+@media screen and (min-width: 90em) {
 
   .page-wrapper {
     box-shadow: 0 0 20px rgba(0,0,0,.2);
     border-left: 1px solid rgba(0, 0, 0, .1);
     border-right: 1px solid rgba(0,0,0,.1);
-    max-width: 100rem;
+    max-width: 96rem;
     padding: 0;
   }
-}*/
+}
 
 @media screen and (min-width: 105em) {
 
