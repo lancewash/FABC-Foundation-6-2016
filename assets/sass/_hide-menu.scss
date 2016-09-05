@@ -8,11 +8,11 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
+  left: 1px;
   right: 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 96rem;
+  max-width: 95.9rem;
   height: 60px;
   background-color: #ffffff;
   /* Force Hardware Acceleration */
@@ -34,6 +34,12 @@
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
+//.cd-auto-hide-header.is-hidden, .is-hidden .cd-secondary-nav {
+//  -webkit-transform: translateY(-100%);
+//  -ms-transform: translateY(-100%);
+//  transform: translateY(-100%);
+//}
+
 @media only screen and (min-width: 1024px) {
   .cd-auto-hide-header {
     height: 44px;

@@ -37,7 +37,7 @@ body {
   height: 257px !important;
   width: 211px;
   top: 10rem;
-  left: 4rem;
+  left: 5rem;
   z-index: 10;
   @include transition(all .5s ease-in-out);
   
@@ -163,9 +163,27 @@ body {
 
   background: $xlight-gray;
 
-  .content-item-1 {
-    background: $light-gray;
+  .content-item-wrap {
+    //background: $light-gray;
+    min-height: 500px;
     padding-right: 3.5rem;
+
+    &.light {
+      background: rgba(0,0,0,.1);
+    }
+
+    &.medium {
+      background: rgba(0,0,0,.2);
+    }
+
+    &.dark {
+      background: rgba(0,0,0,.25);
+    }
+    
+    &.blue {
+      background: $dark-blue;
+
+    }
     
   }
 }
@@ -246,8 +264,22 @@ body {
   min-height: 600px;
 }
 
-.current-events-callout {
+.sunday-sermon-callout {
   background: $secondary-color;
+  max-height: 600px !important;
+  min-height: 500px;
+  
+  h2, p, strong {
+    color: $white;
+    
+    &:after {
+      background: $dark-blue !important;
+    }
+  }
+}
+
+.current-events-callout {
+  background: $dark-blue;
   max-height: 800px !important;
   min-height: 700px;
 }
