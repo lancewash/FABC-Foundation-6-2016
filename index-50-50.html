@@ -97,7 +97,7 @@
                 <div class="banner">
                     <div class="parallax-container" data-parallax="scroll" data-speed="0.4"
                          data-image-src="assets/img/fabc-banner-4.jpg" data-natural-width="1600"
-                         data-natural-height="600" style="height: 440px;">
+                         data-natural-height="600">
 
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                             <strong>Theme:</strong> “Fit For a King”<br>
                             <strong>Text:</strong> John 12:12-17 (KJV)<br>
                             Minister Kenneth J.D. Wilson, Associate Minister</p>
-                        <a href="" class="button primary v-stretch">Sermon Details</a>
+                        <a href="" class="button inverse v-stretch">Sermon Details</a>
 
                     </article>
                 </div>
@@ -228,7 +228,7 @@
 
             <section class="[ row ] news-events-intro main-content-wrap">
 
-                <div class="[ xxxlarge-8 large-10 medium-8 columns ]">
+                <div class="[ large-8 medium-16 columns ] content-item-wrap">
                     <article class="content-item vh-100">
                         <!--News & Events-->
                         <h2>News & Events</h2>
@@ -255,8 +255,8 @@
                         <a href="" class="button primary v-stretch">View All News & Events</a>
                     </article>
                 </div>
-                <div class="[ large-8 medium-16 column ] parallax-container current-events-callout text-inverted">
-                    <article class="vh-100">
+                <div class="[ large-8 medium-16 columns ] content-item-wrap current-events-callout text-inverted">
+                    <article class="content-item vh-100">
                         <!--Today at First African Baptist Church-->
                         <h3>Today at First African Baptist Church</h3>
                         <a href="" class="button inverse v-stretch">Event Signup popup</a>
@@ -282,12 +282,12 @@
                 <div class="overlay-b"></div>
 
             </div>
-            <section class="[ row ] ministries-intro main-content-wrap">
-                <div class="[ large-8 columns ]">
+            <section class="[ row ] ministries main-content-wrap">
+                <div class="[ medium-8 columns ] content-item-wrap">
                     <!--Ministries-->
                     <article class="content-item">
                         <!--Ministries-->
-                        <h2>Ministries</h2>
+                        <h2>About Our Ministries</h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt
@@ -300,7 +300,7 @@
                             praesent
                             luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                     </article>
-                    <div class="[ row ]">
+                   <!-- <div class="[ row ]">
                         <div class="[ large-6 columns ]">
                             <nav>
                                 <div class="content-item">
@@ -329,13 +329,31 @@
                             </nav>
                         </div>
 
-                    </div>
+                    </div>-->
                 </div>
-                <div class="[ xxlarge-4 xxlarge-offset-4 large-5 large-offset-3 medium-16 column end ] ministries-callout parallax-container text-inverted">
+                <div class="medium-8 columns content-item-wrap">
+                    <nav class="content-item vh-100">
+                        <h3>The Ministries of FABC</h3>
+                           <ul class="no-bullet">
+                                <li><a href="">Leadership</a></li>
+                                <li><a href="">Officiary</a></li>
+                                <li><a href="">Office Staff</a></li>
+                                <li><a href="">Ministry Service</a></li>
+                                <li><a href="">Praise Ministry</a></li>
+                                <li><a href="">Outreach Ministry</a></li>
+                                <li><a href="">Youth Ministry</a></li>
+                                <li><a href="">Music Ministry</a></li>
+                                <li><a href="">Houses of FABC</a></li>
+                            </ul>
+                        <a href="" class="button primary v-stretch">Ministries Page</a>
+                    </nav>
+
+                </div>
+                <!--<div class="[ xxlarge-4 xxlarge-offset-4 large-5 large-offset-3 medium-16 column end ] ministries-callout parallax-container text-inverted">
                     <article>
 
                     </article>
-                </div>
+                </div>-->
             </section>
             <div class="[ row xlarge-up-4 large-up-2 medium-up-2 ] ministries-4">
                 <div class="columns bw-watkins">
@@ -361,9 +379,11 @@
                 </div>
             </section>-->
             <!-- Map Begin -->
-            <div class="map-wrapper">
+            <div id="map" class="map-wrapper">
                 <div class="map">
-
+                    <!--<iframe src="https://www.google.com/maps/d/embed?mid=zcTNCy1D-CGs.kE34mbzRRnfE" width="1680"
+                            height="600"></iframe>-->
+                    <iframe src="https://www.google.com/maps/d/embed?mid=14ffbneGjNNXDhjRo-J6h-uJw_9k" width="1680" height="600"></iframe>
                     <!-- Map End -->
                 </div>
             </div>
@@ -405,6 +425,7 @@
 </script>
 <script src="assets/js/parallax.js"></script>
 <script src="assets/js/hamburgers.js" async></script>
+
 <script>
     var forEach = function (t, o, r) {
         if ("[object Object]" === Object.prototype.toString.call(t))for (var c in t)Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++)o.call(r, t[e], e, t)
@@ -443,6 +464,43 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.cd-secondary-nav').waypoint('sticky');
+    });
+</script>-->
+<script>
+    google.maps.event.addDomListener(window, "resize", function() {
+
+        var center = map.getCenter();
+
+        resizeMap();
+
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+
+    });
+
+
+
+    function resizeMap(){
+
+        var h = window.innerHeight;
+        var w = window.innerWidth;
+
+        $("#map_canvas").width(w/2);
+        $("#map_canvas").height(h-50);
+
+    }
+</script>
+<!--<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll >= 200) {
+            //console.log('a');
+            $(".cd-secondary-nav").addClass("logo-small");
+        } else {
+            //console.log('a');
+            $(".cd-secondary-nav").removeClass("logo-small");
+        }
     });
 </script>-->
 </body>

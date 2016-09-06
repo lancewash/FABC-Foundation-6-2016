@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/assets/img/fabc-church.jpg" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/assets/img/fabc-joy-logo-small.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/assets/img/transparent-overlay-85.png" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/assets/js/stickySidebar.js" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/assets/js/waypoints-sticky.min.js" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/assets/js/waypoints.min.js" charset="windows-1252" />

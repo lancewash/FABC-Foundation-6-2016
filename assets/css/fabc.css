@@ -1,18 +1,8 @@
 @charset "UTF-8";
 /*  Colors */
-/**
- * Foundation for Sites by ZURB
- * Version 6.2.3
- * foundation.zurb.com
- * Licensed under MIT Open Source
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-/**
-   * 1. Set default font family to sans-serif.
-   * 2. Prevent iOS and IE text size adjust after device orientation change,
-   *    without disabling user zoom.
-   */
 html {
+  font-size: 100%;
+  box-sizing: border-box;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -21,11 +11,22 @@ html {
   /* 2 */
 }
 
-/**
-   * Remove default margin.
-   */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  padding: 0;
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background: #ECEBE9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* HTML5 display definitions
@@ -403,29 +404,6 @@ th {
 
 .foundation-mq {
   font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em";
-}
-
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -2769,6 +2747,12 @@ p {
   margin-bottom: .5rem;
 }
 
+a {
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
 em,
 i {
   font-style: italic;
@@ -3241,13 +3225,19 @@ p + .stat {
 }
 
 .menu-main.menu > li {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 
+.menu-main.menu > li:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 .menu-main.menu > li:last-child {
   background: #5B1700;
+  margin-left: -1px;
   padding-top: 2rem;
   position: absolute;
   right: 0;
@@ -3264,7 +3254,7 @@ p + .stat {
 
 .menu > li > a {
   display: block;
-  padding: 2.25rem;
+  padding: 2rem;
   line-height: 1;
   transition: all 0.35s ease-in-out;
 }
@@ -3684,7 +3674,6 @@ p + .stat {
   display: inline-block;
   float: right;
   height: 100%;
-  margin-right: -1px;
 }
 
 .cd-primary-nav li {
@@ -3719,6 +3708,7 @@ p + .stat {
 
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   background: #C44427;
+  background: #5B1700;
   color: #fff;
 }
 
@@ -3866,7 +3856,7 @@ p + .stat {
 
 @media only screen and (min-width: 1024px) {
   .cd-secondary-nav {
-    height: 85px;
+    height: 78px;
     overflow: visible;
   }
   .cd-secondary-nav ul {
@@ -6274,6 +6264,14 @@ body {
   width: 175px;
 }
 
+.cd-auto-hide-header .logo-small .logo {
+  background: url("../img/fabc-joy-logo-small.png") no-repeat;
+  height: 42px !important;
+  left: 5rem;
+  top: 2.65rem;
+  width: 175px;
+}
+
 .columns.end,
 .column.end {
   padding-right: 0;
@@ -6300,13 +6298,15 @@ body {
   width: 3rem;
 }
 
-.columns article h2 {
+.columns article h2,
+.columns nav h2 {
   margin-bottom: 2.5rem;
   padding-bottom: .5rem;
   position: relative;
 }
 
-.columns article h2:after {
+.columns article h2:after,
+.columns nav h2:after {
   background: #C44427;
   content: '';
   position: absolute;
@@ -6316,13 +6316,15 @@ body {
   width: 3rem;
 }
 
-.columns article h3 {
+.columns article h3,
+.columns nav h3 {
   margin-top: .5rem;
   margin-bottom: 2rem;
   padding-bottom: .75rem;
 }
 
-.column article {
+.column article,
+.column nav {
   padding: 3.5rem;
   position: relative;
 }
@@ -6337,24 +6339,31 @@ body {
 }
 
 .main-content-wrap {
-  background: #f5f5f5;
+  background: #ECEBE9;
 }
 
 .main-content-wrap .content-item-wrap {
   min-height: 500px;
   padding-right: 3.5rem;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.main-content-wrap .content-item-wrap:hover {
+  background-color: #fff;
 }
 
 .main-content-wrap .content-item-wrap.light {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .main-content-wrap .content-item-wrap.medium {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .main-content-wrap .content-item-wrap.dark {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .main-content-wrap .content-item-wrap.blue {
@@ -6362,7 +6371,7 @@ body {
 }
 
 .content-item {
-  padding: 0 0 5rem 3.5rem;
+  padding: 0 3.5rem 10rem;
   position: relative;
 }
 
@@ -6412,14 +6421,10 @@ nav .content-item {
 
 .worship-times-callout {
   background: #004462;
-  max-height: 700px !important;
-  min-height: 600px;
 }
 
 .sunday-sermon-callout {
   background: #C44427;
-  max-height: 600px !important;
-  min-height: 500px;
 }
 
 .sunday-sermon-callout h2, .sunday-sermon-callout p, .sunday-sermon-callout strong {
@@ -6432,14 +6437,31 @@ nav .content-item {
 
 .current-events-callout {
   background: #004462;
-  max-height: 800px !important;
-  min-height: 700px;
 }
 
 .ministries-callout {
   background: #354545;
-  max-height: 800px !important;
-  min-height: 700px;
+}
+
+.ministries li {
+  line-height: 2.5;
+}
+
+.ministries li a {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.025);
+  border-left: 1px solid #eee;
+  display: block;
+  font-size: .9rem;
+  font-weight: 800;
+  padding: 0.5rem 0.95rem;
+  text-transform: uppercase;
+}
+
+.ministries li a:hover {
+  background: #fdfcfc;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.05);
+  border-left: 2px solid #777;
+  padding-left: 1rem;
 }
 
 .vh-100 {
@@ -6503,7 +6525,7 @@ nav .content-item {
 .intro {
   background: #fff;
   padding-bottom: 6rem;
-  padding-top: 3.5rem;
+  padding-top: 5rem;
 }
 
 .intro h1 span {
@@ -6534,7 +6556,7 @@ nav .content-item {
 }
 
 .intro-img {
-  margin-top: -8rem;
+  margin-top: -10rem;
 }
 
 .intro-img img {
@@ -6715,7 +6737,7 @@ nav .content-item {
 =======================================================================
 */
 .banner-wrap {
-  height: calc(90vh - 160px);
+  height: calc(86vh - 160px);
   background-size: cover;
   width: 100%;
   position: relative;
@@ -6749,7 +6771,7 @@ nav .content-item {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  min-height: 400px;
+  min-height: 500px;
   background: transparent;
 }
 
@@ -6770,7 +6792,8 @@ nav .content-item {
 }
 
 .parallax {
-  max-height: 600px;
+  max-height: 500px !important;
+  min-height: 400px !important;
 }
 
 /*
@@ -6824,7 +6847,7 @@ div.episode .description {
 
 .hamburger-box {
   width: 30px;
-  height: 12px;
+  height: 18px;
   display: inline-block;
   position: relative;
 }
@@ -7856,6 +7879,28 @@ button {
   bottom: 0;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+/*
+=======================================================================
+================================= Map =================================
+=======================================================================
+*/
+#map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 33%;
+  position: relative;
+}
+
+#map iframe {
+  border: none;
+  padding: 0;
+}
+
+.i4ewOd-pzNkMb-haAclf {
+  background-color: #390C06 !important;
+  display: none;
 }
 
 /*

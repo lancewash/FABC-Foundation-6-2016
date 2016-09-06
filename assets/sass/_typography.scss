@@ -8,10 +8,17 @@ p, li, a {
   font-size: 1.1rem;
   line-height: 1.6;
   //margin-bottom: .5rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 p {
   margin-bottom: .5rem;
+}
+
+a {
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 em,

@@ -88,3 +88,16 @@ jQuery(document).ready(function($){
         }
     }
 });
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= 200) {
+        //console.log('a');
+        $(".cd-secondary-nav").addClass("logo-small");
+    } else {
+        //console.log('a');
+        $(".cd-secondary-nav").removeClass("logo-small");
+    }
+});

@@ -1,0 +1,42 @@
+
+/*
+=======================================================================
+================================= Map =================================
+=======================================================================
+*/
+
+
+#map{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 33%;
+  //padding-top: 30px;
+  position: relative;
+
+  iframe {
+    border: none;
+    padding: 0;
+  }
+}
+
+.i4ewOd-pzNkMb-haAclf {
+  background-color: $primary-color !important;
+  display: none;
+}
+
+//.map {
+//  background: url("/assets/img/transparent-overlay-85.png"), url("/assets/img/fabc-church.jpg");
+//  background-repeat: repeat, no-repeat;
+//  display: block;
+//  max-height: 500px;
+//  overflow: hidden;
+//  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+//  padding: 0;
+//  position: relative;
+//
+//  .columns {
+//  max-height: 450px;
+//  padding: 0 !important;
+//}
+//}
+

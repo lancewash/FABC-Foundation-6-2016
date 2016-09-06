@@ -24,6 +24,7 @@
   //padding: 1.5rem 3rem;
 
   a {
+
     color: $white;
     font-size: .9rem;
     letter-spacing: .1rem;
@@ -31,21 +32,44 @@
   }
 }
 
-.menu-main.menu > li {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  
-  &:last-child {
-    background: $tertiary-color;
-    padding-top: 2rem;
-    position: absolute;
-    right: 0;
-    width: 95px;
-    
-    &:hover a {
-      background: lighten($tertiary-color, 5%);
+
+
+.menu-main.menu > {
+
+  li {
+    border-right: 1px solid rgba(255, 255, 255, .15);
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    &:first-child {
+      border-left: 1px solid rgba(255, 255, 255, .15);
     }
+
+    &:last-child {
+      background: $tertiary-color;
+      margin-left: -1px;
+      padding-top: 2rem;
+      position: absolute;
+      right: 0;
+      width: 95px;
+
+      &:hover a {
+        background: lighten($tertiary-color, 5%);
+      }
+    }
+
+    //li {
+    //  border-right: 1px solid rgba(255,255,255,.15);
+    //
+    //  &:first-child {
+    //    border-left: 1px solid rgba(255,255,255,.15);
+    //  }
+    //
+    //  &:last-child {
+    //    margin-left: -1px;
+    //  }
+    //}
   }
 }
 
@@ -55,7 +79,7 @@
 
 .menu > li > a {
   display: block;
-  padding: 2.25rem;
+  padding: 2rem;
   line-height: 1;
   transition: all .35s ease-in-out;
 
@@ -322,7 +346,6 @@
   margin-right: 0.75rem;
 }
 
-
 @media screen and (max-width: 90em) {
 
   .menu a, .quick-links a {
@@ -331,3 +354,4 @@
   }
 
 }
+

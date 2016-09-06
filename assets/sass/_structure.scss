@@ -58,6 +58,20 @@ body {
   //}
 }
 
+.cd-auto-hide-header {
+
+  .logo-small {
+
+    .logo {
+      background: url("../img/fabc-joy-logo-small.png") no-repeat;
+      height: 42px !important;
+      left: 5rem;
+      top: 2.65rem;
+      width: 175px;
+    }
+  }
+}
+
 .columns,
 .column {
 
@@ -94,14 +108,15 @@ body {
 
   }
 
-  article {
+  article,
+  nav {
 
     h2 {
       //border-bottom: 1px solid $light-gray;
       margin-bottom: 2.5rem;
       padding-bottom: .5rem;
       position: relative;
-      
+
       &:after {
         background: $secondary-color;
         content: '';
@@ -112,7 +127,7 @@ body {
         width: 3rem;
       }
     }
-    
+
     //.text-center & {
     //  color: #000;
     //}
@@ -133,7 +148,8 @@ body {
 
 .column {
 
-  article {
+  article,
+  nav {
     //background: #efefef;
     padding: 3.5rem;
     position: relative;
@@ -161,35 +177,42 @@ body {
 
 .main-content-wrap {
 
-  background: $xlight-gray;
+  background: $light-tan;
 
   .content-item-wrap {
     //background: $light-gray;
     min-height: 500px;
     padding-right: 3.5rem;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    
+    &:hover {
+      background-color: $white;
+    }
 
     &.light {
-      background: rgba(0,0,0,.1);
+      background: rgba(0,0,0,.05);
     }
 
     &.medium {
-      background: rgba(0,0,0,.2);
+      background: rgba(0,0,0,.1);
     }
 
     &.dark {
-      background: rgba(0,0,0,.25);
+      background: rgba(0,0,0,.15);
     }
-    
+
     &.blue {
       background: $dark-blue;
 
     }
-    
+
   }
 }
 
 .content-item {
-  padding: 0 0 5rem 3.5rem;
+  padding: 0 3.5rem 10rem;
   position: relative;
 
   h2, h3 {
@@ -208,7 +231,7 @@ body {
   height: calc(84vh - 180px);
   padding: 0;
   position: relative;
-  
+
   a {
     color: $white;
     display: block;
@@ -260,18 +283,18 @@ body {
 
 .worship-times-callout {
   background: $dark-blue;
-  max-height: 700px !important;
-  min-height: 600px;
+  //max-height: 700px !important;
+  //min-height: 600px;
 }
 
 .sunday-sermon-callout {
   background: $secondary-color;
-  max-height: 600px !important;
-  min-height: 500px;
-  
+  //max-height: 600px !important;
+  //min-height: 500px;
+
   h2, p, strong {
     color: $white;
-    
+
     &:after {
       background: $dark-blue !important;
     }
@@ -280,14 +303,40 @@ body {
 
 .current-events-callout {
   background: $dark-blue;
-  max-height: 800px !important;
-  min-height: 700px;
+  //max-height: 800px !important;
+  //min-height: 700px;
 }
 
 .ministries-callout {
   background: $dark-gray;
-  max-height: 800px !important;
-  min-height: 700px;
+  //max-height: 800px !important;
+  //min-height: 700px;
+}
+
+.ministries {
+
+  li {
+    line-height: 2.5;
+
+    a {
+      //background: rgba(255,255,255,.25);
+      border-bottom: 1px dotted rgba(0,0,0,.025);
+      border-left: 1px solid $light-gray;
+      display: block;
+      font-size: .9rem;
+      font-weight: 800;
+      padding: .5rem .95rem;
+      text-transform: uppercase;
+
+      &:hover {
+        //background: rgba(255,255,255,.75);
+        background: lighten( $light-tan, 7% );
+        border-bottom: 1px dotted rgba(0,0,0,.05);
+        border-left: 2px solid $medium-gray;
+        padding-left: 1rem;
+      }
+    }
+  }
 }
 
 //.worship-times-callout {
@@ -358,7 +407,7 @@ body {
 .intro {
   background: $white;
   padding-bottom: 6rem;
-  padding-top: 3.5rem;
+  padding-top: 5rem;
 
   h1 {
 
@@ -395,7 +444,7 @@ body {
 }
 
 .intro-img {
-  margin-top: -8rem;
+  margin-top: -10rem;
 
   img {
     display: block;
@@ -429,7 +478,7 @@ body {
 
 .grid-4 {
   padding: 0.9375rem;
-  
+
   li {
 
   }
@@ -438,13 +487,13 @@ body {
 
 
 .ministries-4 {
-  
+
   .column, .columns {
     height: 100px;
     //border-left: 1px solid $white;
     padding: 0;
-    
-    
+
+
     * {
       justify-content: center;
       text-align: center;
