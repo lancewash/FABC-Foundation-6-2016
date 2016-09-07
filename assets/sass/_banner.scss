@@ -40,3 +40,21 @@
   }
 
 }
+
+@media only screen and (min-height:716px) and (max-height: 1000px) {
+
+  .banner-wrap {
+    height: calc(89vh - 180px);
+    //background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    //height: calc(100vh - 200px);
+
+    .banner {
+
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem;
+
+    }
+  }
+}
