@@ -4,11 +4,14 @@
 =======================================================================
 */
 
-p, li, a {
+p, li, a, strong {
   font-size: 1.1rem;
   line-height: 1.6;
   //margin-bottom: .5rem;
   text-rendering: optimizeLegibility;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 p {
@@ -58,7 +61,10 @@ h6 {
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  line-height: 1.4; }
+  line-height: 1.4;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all 2s ease-in-out;}
 h1 small,
 h2 small,
 h3 small,
@@ -331,6 +337,13 @@ p + .stat {
   h5 {
     font-size: 1.25rem; }
 
+}
+
+.text-inverted {
+
+  h1, h2, h3, h4, h5, p, li, a {
+    color: $white
+  }
 }
 
 //@media screen and (min-width: 40em) {

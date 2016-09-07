@@ -109,7 +109,9 @@ body {
   }
 
   article,
-  nav {
+  nav,
+  .content-item,
+  div {
 
     h2 {
       //border-bottom: 1px solid $light-gray;
@@ -136,6 +138,11 @@ body {
       margin-top: .5rem;
       margin-bottom: 2rem;
       padding-bottom: .75rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
     }
   }
 }
@@ -175,32 +182,63 @@ body {
   //}
 }
 
-.main-content-wrap {
+.main-content-wrap,
+footer {
 
   background: $light-tan;
 
-  .content-item-wrap {
+  .content-item-wrap:not([class*="callout"]) {
     //background: $light-gray;
-    min-height: 500px;
+    //min-height: 500px;
     padding-right: 3.5rem;
     -moz-transition: all .35s ease-in-out;
     -webkit-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
+    transition: all 1s ease-in-out;
+
+
     
     &:hover {
       background-color: $white;
+      
+      //h2, strong {
+      //  color: $dark-blue;
+      //  -moz-transition: all .35s ease-in-out;
+      //  -webkit-transition: all .35s ease-in-out;
+      //  transition: all 2s ease-in-out;
+      //  //-moz-transition-timing-function: linear;
+      //  //-webkit-transition-timing-function: linear;
+      //  //transition-timing-function: linear;
+      //}
+      //p {
+      //  color: $dark-gray;
+      //  -moz-transition: all .35s ease-in-out;
+      //  -webkit-transition: all .35s ease-in-out;
+      //  transition: all 2s ease-in-out;
+      //}
+      //
+      //.button.inverse {
+      //  background: $secondary-color;
+      //  color: $white;
+      //}
     }
+    
+    //&.sunday-sermon-callout {
+    //
+    //  &:hover {
+    //    background: lighten( $secondary-color, 10% );
+    //  }
+    //}
 
     &.light {
-      background: rgba(0,0,0,.05);
+      background: $light-tan;
     }
 
     &.medium {
-      background: rgba(0,0,0,.1);
+      background: darken( $light-tan, 3% );
     }
 
     &.dark {
-      background: rgba(0,0,0,.15);
+      background: darken( $light-tan, 6% );
     }
 
     &.blue {
@@ -223,6 +261,11 @@ body {
 
   nav & {
     padding-top: 0;
+  }
+  
+  footer & {
+    padding-bottom: 5rem;
+    
   }
 }
 
@@ -445,6 +488,8 @@ body {
 
 .intro-img {
   margin-top: -10rem;
+  position: relative;
+  z-index: 99;
 
   img {
     display: block;
@@ -527,6 +572,10 @@ body {
 
 .credit-union {
   background: #585F32;
+}
+
+footer {
+  background: $white;
 }
 
 /*=================================
@@ -651,6 +700,9 @@ body {
       z-index: 10;
     }
   }
+  .intro-text {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 40em) {
@@ -676,17 +728,43 @@ body {
     font-size: 3.75rem;
     margin-bottom: 4rem;
   }
-  //main {
-  //  padding-left: 5%;
-  //  padding-right: 5%;
-  //}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    text-align: center;
+  .content-item {
+    padding: 0;
+    
+    &.vh-100 {
+      padding-bottom: 8rem !important;
+    }
+    
+    h2, h3 {
+      padding-top: 1.5rem;
+    }
+
+    .v-stretch {
+      bottom: 0;
+      left: 1.5rem;
+      min-width: 80%;
+      padding: 1.75rem;
+      right: 1.5rem;
+    }
+  }
+
+  .news-link {
+    
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 1px;
+      padding: .25rem .5rem;
+      background: rgba(255,255,255,.5);
+    }
+  }
+
+  .main-content-wrap .content-item-wrap:not([class*="callout"]),
+  footer .content-item-wrap:not([class*="callout"]) {
+    padding-right: 0.9375rem;
   }
 }
 
