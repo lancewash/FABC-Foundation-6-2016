@@ -30,6 +30,7 @@
   @include transition(all .5s ease-in);
 
   &.is-hidden {
+    top: -80px;
     @include transition(all .5s ease-in-out);
 
     .logo-small {
@@ -331,7 +332,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 6rem 0 0;
+  padding: 0;
   //overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }

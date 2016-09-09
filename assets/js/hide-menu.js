@@ -84,7 +84,6 @@ jQuery(document).ready(function($){
                 secondaryNavigation.addClass('fixed').removeClass('slide-up');
                 belowNavHeroContent.addClass('secondary-nav-fixed');
             }
-
         }
     }
 });

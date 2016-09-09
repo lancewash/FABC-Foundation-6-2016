@@ -2741,8 +2741,8 @@ p, li, a, strong {
   font-size: 1.1rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
@@ -2751,9 +2751,9 @@ p {
 }
 
 a {
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 em,
@@ -2796,8 +2796,8 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.4;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
@@ -3247,6 +3247,7 @@ p + .stat {
 
 .menu-main.menu > li:last-child {
   background: #5B1700;
+  border: none;
   margin-left: -1px;
   padding-top: 2rem;
   position: absolute;
@@ -3266,7 +3267,7 @@ p + .stat {
   display: block;
   padding: 2rem;
   line-height: 1;
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .menu > li > a:hover {
@@ -3557,10 +3558,10 @@ p + .stat {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .cd-auto-hide-header {
@@ -3572,6 +3573,7 @@ p + .stat {
 }
 
 .cd-auto-hide-header.is-hidden {
+  top: -80px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -3657,18 +3659,18 @@ p + .stat {
 .cd-auto-hide-header .nav-trigger em {
   /* this is the menu central line */
   margin: 6px auto 14px;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
 }
 
 .cd-auto-hide-header .nav-trigger em::before, .cd-auto-hide-header .nav-trigger em::after {
   position: absolute;
   content: '';
   left: 0;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .cd-auto-hide-header .nav-trigger em::before {
@@ -3821,10 +3823,10 @@ p + .stat {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .is-hidden .cd-secondary-nav {
@@ -3842,8 +3844,8 @@ p + .stat {
   width: 35px;
   background: transparent;
   pointer-events: none;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .cd-secondary-nav.nav-end::after {
@@ -3860,7 +3862,7 @@ p + .stat {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 6rem 0 0;
+  padding: 0;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -4136,7 +4138,7 @@ Intro Section
 
 .button.inverse:hover, .button.inverse:focus {
   background-color: transparent;
-  border-color: .button.inverse:hover, .button.inverse:focus;
+  border-color:   .button.inverse:hover, .button.inverse:focus white;
   color: #fff;
 }
 
@@ -4756,7 +4758,7 @@ select {
   padding-right: 1.5rem;
 }
 
-@media screen and (min-width: 0 \0) {
+@media screen and (min-width: 0\0) {
   select {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg==");
   }
@@ -6400,8 +6402,8 @@ footer {
 .main-content-wrap .content-item-wrap:not([class*="callout"]),
 footer .content-item-wrap:not([class*="callout"]) {
   padding-right: 3.5rem;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
@@ -6431,8 +6433,12 @@ footer .content-item-wrap:not([class*="callout"]).blue {
 }
 
 .content-item {
-  padding: 0 3.5rem 10rem;
+  padding: 0 3.5rem 12rem;
   position: relative;
+}
+
+.content-item.no-button {
+  padding-bottom: 5rem;
 }
 
 .content-item h2, .content-item h3 {
@@ -6516,7 +6522,7 @@ footer .content-item {
   display: block;
   font-size: .9rem;
   font-weight: 800;
-  padding: 0.25rem 0.95rem;
+  padding: .25rem .95rem;
   text-transform: uppercase;
 }
 
@@ -6528,7 +6534,7 @@ footer .content-item {
   width: 1px;
   top: 33%;
   position: absolute;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color .5s ease-in-out;
 }
 
 .ministries li a:hover:after {
@@ -6844,7 +6850,7 @@ footer {
   }
   .news-link li {
     margin-bottom: 1px;
-    padding: 0.25rem 0.5rem;
+    padding: .25rem .5rem;
     background: rgba(255, 255, 255, 0.5);
   }
   .main-content-wrap .content-item-wrap:not([class*="callout"]),
@@ -6939,7 +6945,7 @@ div.episode {
   margin-bottom: -35px;
   margin-top: 35px;
   padding: 0 3rem 1.5rem;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 div.episode:hover {
@@ -6989,6 +6995,7 @@ div.episode .description {
 .hamburger-box {
   width: 30px;
   height: 18px;
+  margin-top: 8px;
   display: inline-block;
   position: relative;
 }
