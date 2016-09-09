@@ -6479,23 +6479,36 @@ footer .content-item {
 
 .ministries li {
   line-height: 2.5;
+  position: relative;
 }
 
 .ministries li a {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.025);
-  border-left: 1px solid #eee;
   display: block;
   font-size: .9rem;
   font-weight: 800;
-  padding: 0.5rem 0.95rem;
+  padding: 0.25rem 0.95rem;
   text-transform: uppercase;
 }
 
-.ministries li a:hover {
-  background: #fdfcfc;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.05);
-  border-left: 2px solid #777;
-  padding-left: 1rem;
+.ministries li a:after {
+  content: "";
+  background: transparent;
+  left: 0;
+  height: 33%;
+  width: 1px;
+  top: 33%;
+  position: absolute;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.ministries li a:hover:after {
+  content: "";
+  background: #C44427;
+  left: 0;
+  height: 33%;
+  width: 1px;
+  top: 33%;
+  position: absolute;
 }
 
 .vh-100 {
