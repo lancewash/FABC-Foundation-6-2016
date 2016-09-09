@@ -410,6 +410,7 @@ footer {
   height: 100%;
   width: 100%;
   right: 0;
+  transition: background-color 1s ease-in-out;
 }
 
 .overlay-a {
@@ -417,11 +418,21 @@ footer {
 }
 
 .overlay-b {
-  background: url("../img/overlay-b.png") repeat;
+  //background: url("../img/overlay-b.png") repeat;
+  background: rgba(0,0,0,.65);
+
+  &:hover {
+    background: rgba(0,0,0,.25);
+  }
 }
 
 .overlay-c {
-  background: url("../img/overlay-c.png") repeat;
+  background: rgba(0,0,0,.65);
+  transition: background-color 1s ease-in-out;
+
+  &:hover {
+    background: rgba(0,0,0,.25);
+  }
 }
 .overlay-d {
   background: url("../img/overlay-d.png") repeat;

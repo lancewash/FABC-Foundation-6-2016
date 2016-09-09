@@ -4,12 +4,21 @@
 =======================================================================
 */
 
-.episode {
-  margin-bottom: -35px;
-}
+//.episode {
+//  
+//}
 
 div.episode {
 
+  margin-bottom: -35px;
+  margin-top: 35px;
+  padding: 0 3rem 1.5rem;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    background: rgba(0,0,0,.75);
+  }
+  
   h3.episode_name {
 
   text-align: center !important;
