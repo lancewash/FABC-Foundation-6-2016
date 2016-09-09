@@ -480,7 +480,7 @@ td {
 =======================================================================
 */
 /*******************************
-********* Brealpoints **********
+********* Breakpoints **********
 
          small-: 0px
         medium-: 40em (640px)
@@ -489,7 +489,7 @@ td {
        xxlarge-: 90em (1440px)
       xxxlarge-: 105em (1680px)
 
-********* Brealpoints *********
+********* Breakpoints *********
 *******************************/
 .row {
   max-width: 120rem;
@@ -3563,6 +3563,31 @@ p + .stat {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+.cd-auto-hide-header {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.cd-auto-hide-header.is-hidden {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.cd-auto-hide-header.is-hidden .logo-small {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .cd-auto-hide-header::after {
   clear: both;
   content: "";
@@ -3573,6 +3598,11 @@ p + .stat {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 @media only screen and (min-width: 1024px) {

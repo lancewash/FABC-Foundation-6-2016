@@ -40,7 +40,7 @@ body {
   left: 5rem;
   z-index: 10;
   @include transition(all .5s ease-in-out);
-  
+
   .is-hidden & {
     background: url("../img/fabc-joy-logo-small.png") no-repeat;
     height: 42px !important;
@@ -196,10 +196,10 @@ footer {
     transition: all 1s ease-in-out;
 
 
-    
+
     &:hover {
       background-color: $white;
-      
+
       //h2, strong {
       //  color: $dark-blue;
       //  -moz-transition: all .35s ease-in-out;
@@ -221,7 +221,7 @@ footer {
       //  color: $white;
       //}
     }
-    
+
     //&.sunday-sermon-callout {
     //
     //  &:hover {
@@ -262,10 +262,10 @@ footer {
   nav & {
     padding-top: 0;
   }
-  
+
   footer & {
     padding-bottom: 5rem;
-    
+
   }
 }
 
@@ -772,11 +772,11 @@ footer {
 
   .content-item {
     padding: 0;
-    
+
     &.vh-100 {
       padding-bottom: 8rem !important;
     }
-    
+
     h2, h3 {
       padding-top: 1.5rem;
     }
@@ -791,7 +791,7 @@ footer {
   }
 
   .news-link {
-    
+
     h4 {
       font-size: 1.2rem;
     }

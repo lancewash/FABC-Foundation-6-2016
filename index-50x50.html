@@ -511,25 +511,16 @@
 </script>-->
 <script>
     google.maps.event.addDomListener(window, "resize", function () {
-
         var center = map.getCenter();
-
         resizeMap();
-
         google.maps.event.trigger(map, "resize");
         map.setCenter(center);
-
     });
-
-
     function resizeMap() {
-
         var h = window.innerHeight;
         var w = window.innerWidth;
-
         $("#map_canvas").width(w / 2);
         $("#map_canvas").height(h - 50);
-
     }
 </script>
 <!--<script>
