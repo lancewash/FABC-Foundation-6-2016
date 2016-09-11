@@ -17,6 +17,10 @@
 .parallax-container {
   position: relative;
 
+  #subpage & {
+    max-height: 450px;
+  }
+
 
   h1,
   h2,

@@ -29,7 +29,15 @@ body {
 //  height: 100vh;
 //}
 
+#subpage {
 
+  main {
+    background: $white;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    margin: 0 auto;
+    max-width: 75rem;
+  }
+}
 
 .logo {
   position: relative;
@@ -186,8 +194,12 @@ body {
 footer {
 
   background: $light-tan;
+  
+  #subpage & {
+    background: $white;
+  }
 
-  .content-item-wrap:not([class*="callout"]) {
+  .content-item-wrap:not([class*="callout"],.sidebar) {
     //background: $light-gray;
     //min-height: 500px;
     padding-right: 3.5rem;
@@ -249,9 +261,25 @@ footer {
   }
 }
 
+.content-item-wrap {
+
+  &.sidebar {
+    //background: darken( $light-tan, 5% );
+    background: $secondary-color;
+    padding-left: 4.5rem;
+
+    h2, h3, p, li, a {
+      color: $white;
+    }
+  }
+}
 .content-item {
   padding: 0 3.5rem 12rem;
   position: relative;
+
+  &.full {
+    padding: 0 0 12rem;
+  }
 
   &.no-button {
     padding-bottom: 5rem;
@@ -808,7 +836,7 @@ footer {
   }
 
   .main-content-wrap .content-item-wrap:not([class*="callout"]),
-  footer .content-item-wrap:not([class*="callout"]) {
+  footer .content-item-wrap:not([class*="callout"],.sidebar) {
     padding-right: 0.9375rem;
   }
 }

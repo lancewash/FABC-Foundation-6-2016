@@ -27,15 +27,15 @@
 
 
 .cd-auto-hide-header {
-  @include transition(all .5s ease-in);
+  @include transition(all 1s ease-in);
 
   &.is-hidden {
     top: -80px;
-    @include transition(all .5s ease-in-out);
+    @include transition(all 1s ease-in-out);
 
     .logo-small {
       opacity: 0;
-      @include transition(all .5s ease-in-out);
+      @include transition(all 1s ease-in-out);
     }
   }
 }
@@ -349,9 +349,9 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.cd-secondary-nav li:last-of-type {
-  padding-right: 20px;
-}
+//.cd-secondary-nav li:last-of-type {
+//  padding-right: 20px;
+//}
 .cd-secondary-nav a {
   display: block;
   color: #ffffff;
