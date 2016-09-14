@@ -27,11 +27,11 @@
 
 
 .cd-auto-hide-header {
-  @include transition(all 1s ease-in);
+  @include transition(all .5s ease-in);
 
   &.is-hidden {
     top: -80px;
-    @include transition(all 1s ease-in-out);
+    @include transition(all .5s ease-in-out);
 
     .logo-small {
       opacity: 0;
