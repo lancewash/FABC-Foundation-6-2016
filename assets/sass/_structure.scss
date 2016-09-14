@@ -539,9 +539,11 @@ footer {
   padding-top: 5rem;
 
   h1 {
-
+    text-transform: uppercase;
+    
     span {
       font-size: 1.25rem;
+      text-transform: capitalize;
     }
   }
 }
@@ -553,6 +555,7 @@ footer {
     line-height: .6;
     margin-bottom: 7rem;
     position: relative;
+    
 
     &:after {
       background: $secondary-color;
