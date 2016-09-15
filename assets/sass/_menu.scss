@@ -55,8 +55,12 @@
       right: 0;
       width: 95px;
 
-      &:hover a {
-        background: lighten($tertiary-color, 5%);
+      //&:hover a {
+      //  background: lighten($tertiary-color, 5%);
+      //}
+
+      a.active {
+        border-bottom: 4px solid ($tertiary-color);
       }
     }
 
