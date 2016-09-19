@@ -311,6 +311,10 @@ footer {
     //border-top: 1px solid rgba(0, 0, 0, .075);
     //border-top: 1px solid rgba(196,68,39,.1);
     padding-top: 3.5rem;
+
+    .content-img & {
+      padding-top: 1rem;
+    }
   }
 
   nav & {
@@ -320,6 +324,15 @@ footer {
   footer & {
     padding-bottom: 5rem;
 
+  }
+}
+
+.content-img {
+
+
+  img {
+    margin-left: 3.5rem;
+    transform: translateY(-2.5rem);
   }
 }
 
@@ -535,7 +548,7 @@ footer {
 
 .intro {
   background: $white;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   padding-top: 5rem;
 
   h1 {
@@ -623,7 +636,25 @@ footer {
   }
 }
 
-
+//.pastors-desk {
+//  background:  url("../img/RevDent.jpg");
+//  background-repeat:  no-repeat;
+//  background-size: cover;
+//  background-position: right bottom;
+//  transition: all .75s ease-in-out;
+//
+//  //&:hover {
+//  //  -webkit-filter: blur(5px);
+//  //  -moz-filter: blur(5px);
+//  //  -o-filter: blur(5px);
+//  //  -ms-filter: blur(5px);
+//  //  filter: blur(5px);
+//  //}
+//
+//  &:hover {
+//    background-size: 0;
+//  }
+//}
 
 .ministries-4 {
 
