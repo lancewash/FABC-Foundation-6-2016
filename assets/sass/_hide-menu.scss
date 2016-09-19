@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: 1024px) {
   .cd-auto-hide-header {
-    height: 44px;
+    height: 46px;
   }
 }
 
@@ -381,9 +381,20 @@
   }
   .cd-secondary-nav a {
     line-height: 70px;
+    transition: all .5s ease-in-out;
+    box-shadow: inset 0 0 $tertiary-color;
+
+    &:hover {
+      box-shadow: inset 0 -80px $tertiary-color;
+    }
   }
   .cd-secondary-nav a.active {
-    box-shadow: inset 0 -3px #8F3985;
+    box-shadow: inset 0 -4px $tertiary-color;
+
+    &:hover {
+      background: transparent;
+      cursor: default;
+    }
   }
 }
 
