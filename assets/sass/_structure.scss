@@ -307,6 +307,7 @@ header {
   padding: 0 3.5rem 12rem;
   position: relative;
 
+
   &.full {
     padding: 0 0 12rem;
   }
@@ -349,6 +350,10 @@ header {
       color: rgba(255, 255, 255, .75);
     }
   }
+}
+
+.content-item.sermon-player  {
+  padding: 0;
 }
 
 .content-img {
@@ -541,9 +546,9 @@ header {
   background: rgba(0, 0, 0, .65);
   transition: background-color 1s ease-in-out;
 
-  &:hover {
-    background: rgba(0, 0, 0, .25);
-  }
+  //&:hover {
+  //  background: rgba(0, 0, 0, .25);
+  //}
 }
 
 .overlay-d {

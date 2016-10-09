@@ -20,9 +20,9 @@ div.episode {
   }
   
   h3.episode_name {
-
-  text-align: center !important;
-  width: 100% !important;
+    padding-top: 2rem;
+    text-align: center !important;
+    width: 100% !important;
   }
   span {
     color: $white;
@@ -38,3 +38,4 @@ div.episode {
     color: $white !important;
   }
 }
+
