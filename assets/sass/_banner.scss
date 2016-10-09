@@ -42,8 +42,9 @@
 
 @media screen and (max-height: 715px) {
 
-  .banner-wrap {
-    height: calc(84vh - 180px);
+  #header-banner {
+    //height: calc(84vh - 280px);
+    height: 350px;
     //background: url('../img/fabc-banner-1.jpg') 50% 50% no-repeat;
     background-size: cover;
     width: 100%;
@@ -59,6 +60,18 @@
       margin-right: -0.9375rem;
 
     }
+  }
+
+  .intro {
+    padding: 3rem;
+  }
+
+  .intro-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .intro-img {
+    margin-top: -6rem;
   }
 
 }
