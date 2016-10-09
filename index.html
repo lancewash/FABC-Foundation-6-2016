@@ -12,7 +12,7 @@
     <div class="header-intro">
         <div class="[ row ]">
             <div class="[ large-16 columns ] header-wrapper">
-                <header class="cd-auto-hide-header">
+                <header id="header" class="cd-auto-hide-header">
                     <!--<div class="logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>-->
                     <p style="display: inline-block;float: left;font-size: .8rem;padding: .75rem 0 0 2rem;">First
                         African Baptist Church | Darby Township, Pennsylvania</p>
@@ -78,12 +78,12 @@
             </div>
         </div>
         <div class="[ row ]">
-            <!--<div id="gsap-intro-text-1">
+            <div id="gsap-intro-text-1">
                 The Courage to Lead
             </div>
             <div id="gsap-intro-text-2">
                 The Faith to Follow
-            </div>-->
+            </div>
 
             <!--<div id="gsap-intro-text-1">
                 Enter to Worship
@@ -118,21 +118,19 @@
     </div>
 
     <div class="[ row ] intro">
-        <div class="[ large-4 medium-16 columns ] intro-img">
+        <div id="pastor" class="[ large-4 medium-16 columns ] intro-img">
             <img src="assets/img/pastor-mrs-dent.png" alt="">
 
             <p><b>Pastor and First Lady<br>
                 Mr. and Mrs.<br>
                 Richard A. Dent</b></p>
         </div>
-        <div class="[ xlarge-8 large-12 medium-16 columns ] intro-text text-center">
+        <div id="welcome" class="[ xlarge-8 large-12 medium-16 columns ] intro-text text-center">
             <!--Welcome-->
             <h1>Welcome<br>
                 <span>to First African Baptist Church Of Darby Township Pennsylvania</span></h1>
         </div>
         <div class="[ xlarge-10 xlarge-offset-3 large-10 large-offset-5 medium-14 medium-offset-1 columns ] intro-text text-center">
-
-
             <p>
                 I am very pleased that you decided to visit the website of First African Baptist Church of Sharon
                 Hill, PA. First African is a family-oriented church for all of the Lord’s children regardless of
@@ -142,7 +140,6 @@
                 fellowship on Sunday morning. <br>
                 <span>May God bless and keep you.</span>
             </p>
-
         </div>
     </div>
 
@@ -633,9 +630,10 @@
     });
 </script>-->
 <!--CDN links for TweenLite, CSSPlugin, and EasePack-->
-<script src="assets/js/gsap/CSSPlugin.min.js"></script>
-<script src="assets/js/gsap/EasePack.min.js"></script>
-<script src="assets/js/gsap/TweenLite.min.js"></script>
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<!--<script src="assets/js/gsap/CSSPlugin.min.js"></script>
+<script src="assets/js/gsap/EasePack.min.js"></script>-->
+<script src="assets/js/gsap/TweenMax.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
