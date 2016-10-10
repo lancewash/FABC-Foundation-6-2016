@@ -583,6 +583,8 @@ header {
   background: $white;
   padding-bottom: 10rem;
   padding-top: 5rem;
+  position: relative;
+  z-index: 99999;
 
   h1 {
     text-transform: uppercase;
