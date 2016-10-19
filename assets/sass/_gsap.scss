@@ -7,7 +7,7 @@
 
 [id^="gsap-"] {
   color: rgba(0,0,0,.35);
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: $heading-font-regular;
   position: absolute;
   z-index: -1;
@@ -29,7 +29,7 @@
 }
 
 #gsap-intro-text-2 {
-  top: 50%;
+  top: 40%;
 }
 
 #logo {
@@ -39,7 +39,7 @@
 //[data-image-src="assets/img/fabc-banner-4.jpg"]
 #head-banner {
   opacity: 0;
-  background: url("../img/fabc-banner-4.jpg") $white no-repeat;
+  //background: url("../img/fabc-banner-4.jpg") $white no-repeat;
   //background-size: cover;
   width: 100%;
   //height: 500px;
