@@ -20,7 +20,7 @@ function startGSAP(){
    TweenMax.to(logo, 1, { opacity:1 });
    TweenMax.to(intro1, 2, { opacity:1, ease:Power0.easeInOut });
    TweenMax.to(intro2, 2, { delay:2, opacity:1, ease:Power0.easeInOut });
-   TweenMax.to(pastor, .5, { delay:4.5, opacity:1, ease:Power0.easeInOut });
+   TweenMax.to(pastor, .75, { delay:4.5, opacity:1, ease:Power0.easeInOut });
    TweenMax.to(welcome, 1, { delay:4, opacity:1, ease:Power0.easeInOut });
 }
 

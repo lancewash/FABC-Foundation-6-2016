@@ -43,6 +43,13 @@
       @include transition(all 1s ease-in-out);
     }
   }
+
+  &hover {
+
+    a:last-child {
+      padding-right: 3rem;
+    }
+  }
 }
 
 .cd-auto-hide-header::after {
@@ -223,6 +230,10 @@
   border-top: 1px solid #f2f2f2;
   text-transform: uppercase;
   transition: all 0.35s ease;
+
+  &:hover {
+    padding-right: 3rem;
+  }
 }
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   background: $secondary-color;
