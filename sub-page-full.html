@@ -157,22 +157,12 @@
 
         </section>
 
-        <div class="parallax-container parallax" data-parallax="scroll" data-speed="0.3"
+        <div class="parallax-container parallax" alt="" data-bleed="10" data-speed="0.2" data-parallax="scroll"
              data-image-src="assets/img/fabc-banner-1.jpg" data-natural-width="1600" data-natural-height="591">
             <div class="overlay-c"></div>
             <div class="[ row ]">
-                <!--<div class="large-4 columns">
-                    <article class="content-item">
-                        <h2>Sunday Sermon</h2>
-                        &lt;!&ndash;&lt;!&ndash;<script src="http://www.buzzsprout.com/8786.js?player=small&limit=1&beta="
-                                type="text/javascript"
-                                charset="utf-8"></script>&ndash;&gt;
-                        <script type='text/javascript' charset='utf-8'
-                                src='https://www.buzzsprout.com/8786.js?player=small&limit=1'></script>&ndash;&gt;
-                    </article>
-                </div>-->
-                <div class="[ large-8 medium-16 large-offset-4 columns ] text-center">
-                    <article class="content-item">
+                <div class="[ large-8 medium-16 large-offset-4 columns ] text-center relative">
+                    <article class="content-item sermon-player">
                         <h2>Sunday Sermon Podcast</h2>
                         <script type='text/javascript' charset='utf-8'
                                 src='https://www.buzzsprout.com/8786.js?player=small&limit=1'></script>
@@ -422,6 +412,19 @@
         $("#map_canvas").height(h - 50);
     }
 </script>
+<script>
+    $(function () {
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            $('#ios-notice').removeClass('hidden');
+            $('.parallax-container').height($(window).height() * 0.5 | 0);
+        } else {
+            $(window).resize(function () {
+                var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+                $('.parallax-container').height(parallaxHeight);
+            }).trigger('resize');
+        }
+    });
+</script>
 <!--<script>
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -435,6 +438,12 @@
         }
     });
 </script>-->
-<!--<script src="assets/js/animsition.min.js"></script>-->
+<!--CDN links for TweenLite, CSSPlugin, and EasePack-->
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<!--<script src="assets/js/gsap/CSSPlugin.min.js"></script>
+<script src="assets/js/gsap/EasePack.min.js"></script>-->
+<script src="assets/js/gsap/TweenMax.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/animsition.min.js"></script>
 </body>
 </html>
