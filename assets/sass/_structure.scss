@@ -40,7 +40,7 @@ header {
 #subpage {
 
   main {
-    background: $white;
+    //background: $white;
     //box-shadow: 0 0 20px rgba(0,0,0,.2);
     margin: 0 auto;
     position: relative;
@@ -481,7 +481,7 @@ header {
         background: transparent;
         left: 0;
         height: 33%;
-        width: 1px;
+        width: 3px;
         top: 33%;
         position: absolute;
         transition: background-color .5s ease-in-out;
@@ -499,7 +499,7 @@ header {
           background: $secondary-color;
           left: 0;
           height: 33%;
-          width: 1px;
+          width: 3px;
           top: 33%;
           position: absolute;
         }

@@ -219,6 +219,7 @@
 }
 .cd-primary-nav > ul a {
   /* target primary-nav links */
+  background: url("../img/expand.png") no-repeat right 46% $white;
   display: block;
   font-size: .65rem;
   font-weight: 800;
@@ -232,12 +233,15 @@
   transition: all 0.35s ease;
 
   &:hover {
+    background: #000;
+    //background: url("../img/expand.png") no-repeat 90% 50%;
     padding-right: 3rem;
   }
 }
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   background: $secondary-color;
   background: #5B1700;
+  background: url("../img/expand.png") no-repeat right 46% #5B1700;
   color: $white;
 }
 @media only screen and (min-width: 1024px) {
@@ -387,6 +391,10 @@
     /* reset mobile style */
     //display: block;
     text-align: center;
+
+    //&:hover li {
+    //  opacity: .5;
+    //}
   }
   .cd-secondary-nav li {
     /* reset mobile style */
@@ -397,7 +405,7 @@
   }
   .cd-secondary-nav a:not(.logo) {
     //line-height: 70px;
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
     box-shadow: inset 0 0 $tertiary-color;
 
     &:hover {
@@ -405,10 +413,11 @@
     }
   }
   .cd-secondary-nav a.active {
-    box-shadow: inset 0 -4px $tertiary-color;
+    box-shadow: inset 0 -4px lighten($tertiary-color, 10%);
 
     &:hover {
       background: transparent;
+      box-shadow: inset 0 -4px lighten($tertiary-color, 10%);
       cursor: default;
     }
   }
