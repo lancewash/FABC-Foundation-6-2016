@@ -40,7 +40,7 @@ header {
 #subpage {
 
   main {
-    background: $white;
+    //background: $white;
     //box-shadow: 0 0 20px rgba(0,0,0,.2);
     margin: 0 auto;
     position: relative;
@@ -138,7 +138,7 @@ header {
       position: relative;
 
       &:after {
-        background: $secondary-color;
+        background: rgba(255,255,255,.5);
         content: '';
         position: absolute;
         bottom: -.5rem;
@@ -305,7 +305,7 @@ header {
 
 .content-item {
   padding: 0 3.5rem 12rem;
-  position: relative;
+  //position: relative;
 
 
   &.full {
@@ -362,6 +362,16 @@ header {
     margin-left: -.9rem;
     //transform: translateY(-2.5rem);
   }
+}
+
+.content-bg-img {
+  background-size: cover;
+}
+
+.content-bg-img-1 {
+  //background: url("../img/overlay-d.png"), url('../img/fabc-banner-1-bw.jpg') 50% 50%;
+  background: url("../img/overlay-a.png"), url('../img/fabc-banner-1-bw.jpg') 50% 50%;
+  background-repeat: repeat, no-repeat;
 }
 
 .quick-links {
@@ -434,12 +444,12 @@ header {
     color: $white;
 
     &:after {
-      background: $dark-blue !important;
+      //background: $dark-blue !important;
     }
   }
 }
 
-.current-events-callout {
+.current-events-callout, .sunday-sermon-callout {
   background: $dark-blue;
   //max-height: 800px !important;
   //min-height: 700px;
@@ -471,7 +481,7 @@ header {
         background: transparent;
         left: 0;
         height: 33%;
-        width: 1px;
+        width: 3px;
         top: 33%;
         position: absolute;
         transition: background-color .5s ease-in-out;
@@ -489,7 +499,7 @@ header {
           background: $secondary-color;
           left: 0;
           height: 33%;
-          width: 1px;
+          width: 3px;
           top: 33%;
           position: absolute;
         }
@@ -649,6 +659,8 @@ header {
   //}
 }
 
+.content-item
+
 .news-link {
 
   li {
@@ -670,25 +682,13 @@ header {
   }
 }
 
-//.pastors-desk {
-//  background:  url("../img/RevDent.jpg");
-//  background-repeat:  no-repeat;
-//  background-size: cover;
-//  background-position: right bottom;
-//  transition: all .75s ease-in-out;
-//
-//  //&:hover {
-//  //  -webkit-filter: blur(5px);
-//  //  -moz-filter: blur(5px);
-//  //  -o-filter: blur(5px);
-//  //  -ms-filter: blur(5px);
-//  //  filter: blur(5px);
-//  //}
-//
-//  &:hover {
-//    background-size: 0;
-//  }
-//}
+.pastors-desk {
+  background: $secondary-color;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  transition: all .75s ease-in-out;
+}
 
 .ministries-4 {
 
