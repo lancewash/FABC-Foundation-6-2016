@@ -54,10 +54,14 @@ header {
   background: url("../img/fabc-logo.png") no-repeat;
   height: 257px !important;
   width: 211px;
-  top: 10rem;
+  //top: 9rem;
   left: 5rem;
   z-index: 10;
-  @include transition(all .5s ease-in-out);
+  @include transition(all .25s ease-in-out);
+
+  &:hover {
+    top: 10rem;
+  }
 
   .is-hidden & {
     background: url("../img/fabc-joy-logo-small.png") no-repeat;
@@ -80,11 +84,11 @@ header {
 
   .logo-small {
 
-    .logo {
+    #logo {
       background: url("../img/fabc-joy-logo-small.png") no-repeat;
       height: 42px !important;
       left: 5rem;
-      top: 2.65rem;
+      top: 2.65rem !important;
       width: 175px;
     }
   }
@@ -765,12 +769,12 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     border-left: 1px solid rgba(0, 0, 0, .1);
     border-right: 1px solid rgba(0, 0, 0, .1);
-    max-width: 110rem;
+    max-width: 100rem;
     padding: 0;
   }
 
   .cd-auto-hide-header {
-    max-width: 110rem;
+    max-width: 100rem;
   }
 }
 
