@@ -11,6 +11,7 @@ var pastorImg = document.getElementById('pastor-img');
 var pastorText = document.getElementById('pastor-txt');
 var welcome1 = document.getElementById('welcome-1');
 var welcome2 = document.getElementById('welcome-2');
+//var header = document.getElementById('animate-header');
 
 $(document).ready(function(){
     startGSAP();
@@ -19,13 +20,13 @@ $(document).ready(function(){
 function startGSAP(){
    TweenMax.to(intro1, 1, { opacity:1, ease:Power0.easeInOut });
    TweenMax.to(intro2, 2.5, { delay:1, opacity:1, ease:Power0.easeInOut });
-   TweenMax.to(header, 2, { delay:3, opacity:1 });
-   TweenMax.to(banner, 3, {delay:3,opacity:1 });
-   TweenMax.to(logo, 1.5, { delay:3, opacity:1 });
-   TweenMax.to(pastorImg, 2, { delay:3, opacity:1, ease:Power0.easeInOut });
-   TweenMax.to(pastorText, 2, { delay:2, opacity:1, ease:Power0.easeInOut });
-   TweenMax.to(welcome1, 3, { delay:2, opacity:1, ease:Power0.easeInOut });
-   TweenMax.to(welcome2, 2, { delay:3, opacity:1, ease:Power0.easeInOut });
+   TweenMax.to(header, 1, { delay:3, opacity:1 });
+   TweenMax.to(banner, 1, {delay:3,opacity:1 });
+   TweenMax.to(logo, 1, { delay:2, opacity:1 });
+   TweenMax.to(pastorImg, 1, { delay:4, opacity:1, ease:Power0.easeInOut });
+   TweenMax.to(pastorText, 1, { delay:5, opacity:1, ease:Power0.easeInOut });
+   TweenMax.to(welcome1, 1, { delay:4, opacity:1, ease:Power0.easeInOut });
+   TweenMax.to(welcome2, 1, { delay:6, opacity:1, ease:Power0.easeInOut });
 }
 
 // function startGSAP(){
